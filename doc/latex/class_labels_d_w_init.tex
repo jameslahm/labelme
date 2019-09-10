@@ -1,0 +1,147 @@
+\hypertarget{class_labels_d_w_init}{}\doxysection{Labels\+D\+W\+Init Class Reference}
+\label{class_labels_d_w_init}\index{LabelsDWInit@{LabelsDWInit}}
+
+
+负责标签列表组件的初始化及状态管理  
+
+
+
+
+{\ttfamily \#include $<$Labels\+D\+W\+Init.\+h$>$}
+
+Inheritance diagram for Labels\+D\+W\+Init\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_labels_d_w_init}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_labels_d_w_init_a59b4f377912138e09b7a71ae4a11819e}{Labels\+D\+W\+Init}} (Q\+Widget $\ast$parent)
+\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a38cc55f6da355d795125c45e90262f02}{set\+Up}} (Q\+Main\+Window $\ast$w)
+\begin{DoxyCompactList}\small\item\em 组件初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a923fa75c7585b4c71e403720b0760ca2}{show\+Labels}} (Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$ $>$ \&shapes)
+\begin{DoxyCompactList}\small\item\em 显示标注标签，当中心组件解析完毕后，会调用该槽函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a971f083deedea2b7e630751ece544447}{change\+Selected}} (int index, bool b)
+\begin{DoxyCompactList}\small\item\em 改变选中状态，中心组件选中状态发生改变时，会调用该函数同步 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a6c9aa49288cfb42f1abc6661d57b08b5}{add\+Label}} (\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$shape, int index)
+\begin{DoxyCompactList}\small\item\em 添加标注，中心组件添加标注时，调用该函数同步 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a69090047ab9f953f2fb3278f8ddc4bbf}{change\+Label}} (int index, \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$shape)
+\begin{DoxyCompactList}\small\item\em 更改标注，中心组件更改标注文字时，调用该函数同步 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_labels_d_w_init_a52b54746231068bb79f0ce3e1794cbaf}{delete\+Label}} (int index)
+\begin{DoxyCompactList}\small\item\em 删除标注，中心组件删除标注时，调用该函数同步 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Dock\+Widget $\ast$ \mbox{\hyperlink{class_labels_d_w_init_ade5b62c2feea0a79ef3b60b6c53c58ca}{dw\+Labels}}
+\begin{DoxyCompactList}\small\item\em 负责展示标签列表的浮动窗口 \end{DoxyCompactList}\item 
+Q\+List\+Widget $\ast$ \mbox{\hyperlink{class_labels_d_w_init_ac92361cb3736f49a831c4306ca7fb5ed}{lw}}
+\begin{DoxyCompactList}\small\item\em 标签列表组件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+负责标签列表组件的初始化及状态管理 
+
+Labels\+D\+W\+Init类负责标签列表浮动窗口组件的界面初始化， 以及后续的标签列表的管理。 由\+Main\+Window连接该类与\+Central\+Widget类的信号与槽， 建立起双向信息传递通道以进行同步。 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_labels_d_w_init_a59b4f377912138e09b7a71ae4a11819e}\label{class_labels_d_w_init_a59b4f377912138e09b7a71ae4a11819e}} 
+\index{LabelsDWInit@{LabelsDWInit}!LabelsDWInit@{LabelsDWInit}}
+\index{LabelsDWInit@{LabelsDWInit}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{LabelsDWInit()}{LabelsDWInit()}}
+{\footnotesize\ttfamily Labels\+D\+W\+Init\+::\+Labels\+D\+W\+Init (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_labels_d_w_init_a6c9aa49288cfb42f1abc6661d57b08b5}\label{class_labels_d_w_init_a6c9aa49288cfb42f1abc6661d57b08b5}} 
+\index{LabelsDWInit@{LabelsDWInit}!addLabel@{addLabel}}
+\index{addLabel@{addLabel}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{addLabel()}{addLabel()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::add\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$}]{shape,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+添加标注，中心组件添加标注时，调用该函数同步 
+
+添加标注 \mbox{\Hypertarget{class_labels_d_w_init_a69090047ab9f953f2fb3278f8ddc4bbf}\label{class_labels_d_w_init_a69090047ab9f953f2fb3278f8ddc4bbf}} 
+\index{LabelsDWInit@{LabelsDWInit}!changeLabel@{changeLabel}}
+\index{changeLabel@{changeLabel}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{changeLabel()}{changeLabel()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::change\+Label (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$}]{shape }\end{DoxyParamCaption})}
+
+
+
+更改标注，中心组件更改标注文字时，调用该函数同步 
+
+改变标注 \mbox{\Hypertarget{class_labels_d_w_init_a971f083deedea2b7e630751ece544447}\label{class_labels_d_w_init_a971f083deedea2b7e630751ece544447}} 
+\index{LabelsDWInit@{LabelsDWInit}!changeSelected@{changeSelected}}
+\index{changeSelected@{changeSelected}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{changeSelected()}{changeSelected()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::change\+Selected (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+改变选中状态，中心组件选中状态发生改变时，会调用该函数同步 
+
+改变选中的item \mbox{\Hypertarget{class_labels_d_w_init_a52b54746231068bb79f0ce3e1794cbaf}\label{class_labels_d_w_init_a52b54746231068bb79f0ce3e1794cbaf}} 
+\index{LabelsDWInit@{LabelsDWInit}!deleteLabel@{deleteLabel}}
+\index{deleteLabel@{deleteLabel}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{deleteLabel()}{deleteLabel()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::delete\+Label (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+删除标注，中心组件删除标注时，调用该函数同步 
+
+删除标注 \mbox{\Hypertarget{class_labels_d_w_init_a38cc55f6da355d795125c45e90262f02}\label{class_labels_d_w_init_a38cc55f6da355d795125c45e90262f02}} 
+\index{LabelsDWInit@{LabelsDWInit}!setUp@{setUp}}
+\index{setUp@{setUp}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Main\+Window $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+组件初始化 
+
+标签列表组件的初始化 \mbox{\Hypertarget{class_labels_d_w_init_a923fa75c7585b4c71e403720b0760ca2}\label{class_labels_d_w_init_a923fa75c7585b4c71e403720b0760ca2}} 
+\index{LabelsDWInit@{LabelsDWInit}!showLabels@{showLabels}}
+\index{showLabels@{showLabels}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{showLabels()}{showLabels()}}
+{\footnotesize\ttfamily void Labels\+D\+W\+Init\+::show\+Labels (\begin{DoxyParamCaption}\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$ $>$ \&}]{shapes }\end{DoxyParamCaption})}
+
+
+
+显示标注标签，当中心组件解析完毕后，会调用该槽函数 
+
+当中心组件解析完毕时，会调用该函数使标签列表同时显示 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_labels_d_w_init_ade5b62c2feea0a79ef3b60b6c53c58ca}\label{class_labels_d_w_init_ade5b62c2feea0a79ef3b60b6c53c58ca}} 
+\index{LabelsDWInit@{LabelsDWInit}!dwLabels@{dwLabels}}
+\index{dwLabels@{dwLabels}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{dwLabels}{dwLabels}}
+{\footnotesize\ttfamily Q\+Dock\+Widget$\ast$ Labels\+D\+W\+Init\+::dw\+Labels}
+
+
+
+负责展示标签列表的浮动窗口 
+
+\mbox{\Hypertarget{class_labels_d_w_init_ac92361cb3736f49a831c4306ca7fb5ed}\label{class_labels_d_w_init_ac92361cb3736f49a831c4306ca7fb5ed}} 
+\index{LabelsDWInit@{LabelsDWInit}!lw@{lw}}
+\index{lw@{lw}!LabelsDWInit@{LabelsDWInit}}
+\doxysubsubsection{\texorpdfstring{lw}{lw}}
+{\footnotesize\ttfamily Q\+List\+Widget$\ast$ Labels\+D\+W\+Init\+::lw}
+
+
+
+标签列表组件 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_labels_d_w_init_8h}{Labels\+D\+W\+Init.\+h}}\item 
+src/\mbox{\hyperlink{labelsdwinit_8cpp}{labelsdwinit.\+cpp}}\end{DoxyCompactItemize}

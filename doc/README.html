@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h3><a name="labelme" class="md-header-anchor"></a><span>LabelMe</span></h3><h4><a name="for-developers" class="md-header-anchor"></a><span>For Developers</span></h4><ul><li><span>详细开发者文档请见</span><a href='html/index.html'><span>此处</span></a></li><li><span>代码模块结构图：</span><img src='qt.png' alt='' referrerPolicy='no-referrer' /></li></ul><p>&nbsp;</p><p>&nbsp;</p><h4><a name="for-users" class="md-header-anchor"></a><span>For Users</span></h4><ul><li><p><span>程序运行流程：</span></p><p><span>直接点击bin目录下的LabelMe.exe，即可开始运行程序，程序主界面：</span><img src='program.jpg' alt='' referrerPolicy='no-referrer' /></p></li></ul><p><span>程序界面主要分为六个区域，最上面为菜单栏，最左边为工具栏，中间为中心窗口（展示图片以及进行标注），右侧上方为展示标注标签的窗口，右侧下方为展示文件列表的窗口，最下面为状态栏。菜单栏、工具栏以及在中心窗口右键均可以选择命令进行执行，右侧的标签列表可以进行交互来进行与标注相关的动作，如切换、删除、编辑、隐藏标注等，右侧文件列表亦可进行交互来切换文件等。</span></p><ul><li><p><span>程序功能说明：</span></p><p><span>（注：大作业文档要求的所有功能及加分项功能均在9月6日前完成，且在答辩时基本全部演示，故功能说明中没有红色标注）</span></p><ul><li><p><span>菜单栏功能部分：</span></p><ul><li><p><span>Open : 打开图片文件，通过点击命令或者快捷键即可运行。打开文件后，右侧文件列表会显示在同一目录下的所有文件，点击文件列表中的文件即可进行切换。图片格式支持jpg、png、gif、bmp、jpeg等</span></p></li><li><p><span>Next Image：切换至下一张图片，若无下一张图片，会弹出窗口提醒用户，通过点击命令或者快捷键即可运行。3d状态下会切换当前聚焦视角的图片，可通过鼠标点击切换聚焦视角。</span></p></li><li><p><span>Prev Image ： 切换至上一张图片，若无上一张图片，会弹出窗口提醒用户，通过点击命令或者快捷键即可运行。3d状态下会切换当前聚焦视角的图片，可通过鼠标点击切换聚焦视角。</span></p></li><li><p><span>Open Dir：打开文件夹，通过点击或者快捷键即可运行。打开文件夹默认会显示文件夹中的第一张图片，同时右侧文件列表也会显示文件夹里的所有图片，点击文件列表中的文件可以进行文件切换。</span></p></li><li><p><span>Import：导入标注文件，通过点击即可运行。标注文件的样例文件请参考</span><a href='../examples/1.json'><span>此处</span></a><span>。</span></p></li><li><p><span>Save : 保存文件，通过点击或者快捷键即可运行。会将对标注的更改进行保存，写入默认标注文件中。</span></p></li><li><p><span>Close : 关闭当前文件，通过点击或者快捷键即可运行。</span></p></li><li><p><span>Quit : 退出程序，通过点击或者快捷键即可运行</span></p></li><li><p><span>Create Brush ：</span></p><ul><li><span>2d状态下：创建画刷形状，通过点击或者快捷键即可运行。创建画刷形状用于进行分割标注，在想要进行标注的区域，点击鼠标即可进行绘制，绘制完毕后按下回车键即可键入标注文字，添加标注。</span></li><li><span>3d状态下：创建画刷形状，在任意视角任意图片直接点击鼠标进行绘制即可，绘制完毕后按下回车键，键入标注文字即可添加标注。</span></li></ul></li><li><p><span>Edit Brush ：编辑画刷大小，通过点击或者快捷键即可运行。默认为圆形画刷，可以改变画刷大小（注，画刷大小是以当前图片的宽度为比例）</span></p></li><li><p><span>Create Rectangle ：</span></p><ul><li><span>2d状态下：创建矩形，通过点击或者快捷键即可运行。在想要进行标注的区域，点击鼠标开始绘制，在移动鼠标的过程中，会同步显示矩形边框，绘制完毕时，再点击鼠标即可。</span></li><li><span>3d状态下：创建长方体，通过在任意视角的图片点击即可开始该视角下的矩形框的绘制，再次点击鼠标该视角下矩形框即绘制完毕，这时在其他视角，可以通过右键聚焦视角，并进行图片的切换，当其他视角下有最开始创建的矩形框时，移动鼠标即可进行其他视角下的矩形框的绘制，绘制完毕时再次点击鼠标即可，长方体绘制完毕后，按下回车键，键入标注文字，即可添加标注。</span></li></ul></li><li><p><span>Create Circle：创建圆形，操作与创建矩形类似，请参考创建矩形。</span></p></li><li><p><span>Create Polygons：创建多边形，通过点击或者快捷键即可运行。在想要标注的区域，点击鼠标开始绘制，在想要绘制的多边形顶点处再次点击鼠标，继续绘制，绘制完毕后，按下回车键。（即文档中要求的绘制闭合折线）</span></p></li><li><p><span>Create Curve：创建平滑曲线，通过点击或者快捷键即可运行。在想要标注的区域，点击鼠标开始绘制，接着自由移动鼠标即可，绘制完毕后按下回车键。</span></p></li><li><p><span>Edit Color：编辑标注颜色，通过点击或者快捷键即可运行。会弹出颜色对话框，任意选颜色即可。</span></p></li><li><p><span>Edit Polygons：进入编辑状态，通过点击或者快捷键即可运行。点击后会进入编辑状态，在该状态下，可以对标注进行拖动，选中，撤销，重做，放大缩小等一系列操作。</span></p></li><li><p><span>Delete Polygons：删除标注，通过点击或者快捷键即可运行。该动作只有在编辑状态下且有标注被选中才能进行操作。</span></p></li><li><p><span>Edit Label：编辑标注文字，通过点击或者快捷键即可运行。该动作只有在编辑状态且有标注被选中才能进行操作。</span></p></li><li><p><span>Undo：撤销动作，通过点击或者快捷键即可运行。可以撤销任意步数的动作。</span></p></li><li><p><span>Redo：重做动作，通过点击或者快捷键即可运行。可以重做任意步数的动作。</span></p></li><li><p><span>Undo last point：撤销当前正在创建的标注形状，通过点击或者快捷键即可运行。会移除当前正在创建的标注形状。</span></p></li><li><p><span>Polygon Labels：是否显示标签列表组件，点击即可进行切换。</span></p></li><li><p><span>File List：是否显示文件列表，点击即可进行切换。</span></p></li><li><p><span>3D：是否进入3D模式，点击即可进行2d及3d状态的转换。</span></p></li><li><p><span>Hide Polygons：隐藏所有标注，点击即可运行。</span></p></li><li><p><span>Show Polygons：显示所有标注，点击即可运行。</span></p></li><li><p><span>Magnifier：是否显示放大镜，点击即可运行。默认会捕捉鼠标附近20</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.807ex" height="1.41ex" viewBox="0 -554.9 778 607.1" role="img" focusable="false" style="vertical-align: 0.021ex; margin-bottom: -0.142ex;"><defs><path stroke-width="0" id="E3-MJMAIN-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMAIN-D7" x="0" y="0"></use></g></svg></span><script type="math/tex">\times</script><span>20的区域，放大至100</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.807ex" height="1.41ex" viewBox="0 -554.9 778 607.1" role="img" focusable="false" style="vertical-align: 0.021ex; margin-bottom: -0.142ex;"><defs><path stroke-width="0" id="E3-MJMAIN-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMAIN-D7" x="0" y="0"></use></g></svg></span><script type="math/tex">\times</script><span>100，显示在图片右下角（需注意图片的大小，因为会在图片右下角显示100</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.807ex" height="1.41ex" viewBox="0 -554.9 778 607.1" role="img" focusable="false" style="vertical-align: 0.021ex; margin-bottom: -0.142ex;"><defs><path stroke-width="0" id="E3-MJMAIN-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMAIN-D7" x="0" y="0"></use></g></svg></span><script type="math/tex">\times</script><span>100）</span></p></li><li><p><span>Zoom In：放大图片，点击或者快捷键即可运行。默认会放大图片至1.2倍。</span></p></li><li><p><span>Zoom Out：缩小图片，点击或者快捷键即可运行。默认会缩小图片至0.8倍。</span></p></li><li><p><span>Original Size：图片恢复至原始图片大小，点击或者快捷键即可运行。会使图片按照原始大小显示。</span></p></li><li><p><span>Fit Window：图片宽度适应中心窗口，点击或者快捷键即可运行。会使图片按照中心窗口宽度显示。</span></p></li></ul></li><li><p><span>工具栏功能部分：</span></p><ul><li><span>工具栏命令即为菜单栏命令的部分，请参考菜单栏命令</span></li></ul></li><li><p><span>状态栏功能部分：</span></p><ul><li><span>部分命令执行时会在状态栏处显示。</span></li><li><span>鼠标在图片上移动时，会同步在状态栏处显示当前鼠标的坐标。2d显示二维坐标，3d显示三维坐标。</span></li></ul></li><li><p><span>中心窗口功能部分：</span></p><ul><li><span>为方便用户交互，图片上的标注形状默认显示为不填充，即只显示边框，当鼠标进入标注形状内部时，标注形状为悬浮（hovered）状态，内部会填充颜色，当鼠标点击标注形状时，标注形状为选中（selected）状态，内部也会填充颜色，同时在标签列表窗口处也会显示标签选中状态。当标注脱离悬浮状态（unhovered）或者未选中状态（unselected）时，内部会显示不填充。对选中的标注形状即可进行一系列操作，如拖动标注形状，删除，更改等动作。</span></li><li><span>2d状态下，在中心窗口点击右键亦可选择执行部分命令，方便交互。</span></li><li><span>3d状态下，中心窗口分为3个视角，三个视角顺序未从左至右，从上至下，分别为0，1，2。第一个视角为从上往下看的俯视视角，图片顺序为从上至下，第二个视角为正视视角，图片顺序为从后往前，第三个视角为右视视角，图片顺序为从左至右。鼠标点击视角可进行视角图片的聚焦，即切换视角。</span></li></ul></li><li><p><span>标签列表组件功能部分：</span></p><ul><li><span>在标签列表窗口中右键可以选择并执行部分命令</span></li><li><span>在标签列表窗口中可以通过点击标签进行标注的选中，选中状态会同步至中心窗口中并显示标注形状填充</span></li><li><span>改变标签列表窗口中标签的checkstate可以进行是否显示该标注状态的切换，checked为显示，unchecked为隐藏</span></li><li><span>在中心窗口对标注的交互会在标签列表中同步更新，例如添加标注、删除标注等</span></li></ul></li><li><p><span>文件列表组件功能部分：</span></p><ul><li><span>2d状态下，在文件列表窗口中点击文件即可进行文件的切换</span></li><li><span>3d状态下，由于文件的切换由中心窗口控制，因此点击不会有反应</span></li></ul></li><li><p><span>其他说明：</span></p><ul><li><span>标注文件默认名说明：在读取图片时，会读取默认标注文件，默认标注文件名与图片名相同，后缀名为json。3d状态下默认标注文件名为该文件夹下第一张图片名+“_3D”，后缀名为json。</span></li><li><span>标注文件格式说明：type表明标注形状的类型，分为Brush（画刷形状），Rectangle（矩形形状），Polygons（多边形形状），Circle（圆形形状），Curve（平滑曲线形状），Brush3D（3d画刷形状），Rectangle3D（3d长方体形状）；color代表标注形状颜色；label代表标注标签文字，points代表像素点位（2d存储为横纵坐标比例，3d存储为横纵坐标比例，及z方向上的顺序）‘radius代表画刷形状的大小或者圆形形状的大小；width代表矩形的宽；height代表矩形的高；zspan代表3d长方体在z方向上的跨度</span></li><li><span>关于大作业文档要求中的状态栏中显示标签名称和颜色，程序中使用标签列表窗口显示标签，且在点击标签时，中心窗口会同步标注形状被选中，内部会显示为填充，其中颜色也为由用户自定义。</span></li><li><span>examples文件夹里面有样例图片以及样例标注文件可做测试用。</span></li></ul></li></ul></li></ul><h4><a name="others" class="md-header-anchor"></a><span>Others</span></h4><ul><li><span>程序中额外调用opencv库，用于3d图片的处理及一些标注形状的处理；若需编译，请配置OPENCV_SDK_DIR（opencv库的环境变量）。</span></li></ul></div>
+</body>
+</html>

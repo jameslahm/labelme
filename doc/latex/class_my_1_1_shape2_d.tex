@@ -1,0 +1,118 @@
+\hypertarget{class_my_1_1_shape2_d}{}\doxysection{My\+::Shape2D Class Reference}
+\label{class_my_1_1_shape2_d}\index{My::Shape2D@{My::Shape2D}}
+
+
+2d标注形状的基类  
+
+
+
+
+{\ttfamily \#include $<$Shape2\+D.\+h$>$}
+
+Inheritance diagram for My\+::Shape2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_my_1_1_shape2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_shape2_d_aa0e4ba59bb6c9b2e413ed0af16c2391d}{Shape2D}} (\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{My\+::\+Shape\+::\+Type}} t)
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_shape2_d_afdbbf8e2acc6b31d8a3b6d2c3fb35672}{draw}} (Q\+Widget $\ast$w)
+\begin{DoxyCompactList}\small\item\em 绘制标注形状虚函数 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_my_1_1_shape2_d_acdd115a457cf3ce87f0a4e78987e31bd}{is\+In\+Shape}} (Q\+PointF p, Q\+Widget $\ast$w)
+\begin{DoxyCompactList}\small\item\em 判断鼠标是否在标注形状内部虚函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_shape2_d_a999a19c8bcd269b331e02c02d4dc6b9c}{offset}} (float x\+Offset, float y\+Offset)
+\begin{DoxyCompactList}\small\item\em 偏移标注形状虚函数 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_1_1_shape2_d_a051065ba65759ac7359ca7b640e3c370}{$\sim$\+Shape2D}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ Q\+PointF $>$ \mbox{\hyperlink{class_my_1_1_shape2_d_a837e215942967335300ab4bf3efb463d}{points}}
+\begin{DoxyCompactList}\small\item\em 存储标注形状的像素点位 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+2d标注形状的基类 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape2_d_aa0e4ba59bb6c9b2e413ed0af16c2391d}\label{class_my_1_1_shape2_d_aa0e4ba59bb6c9b2e413ed0af16c2391d}} 
+\index{My::Shape2D@{My::Shape2D}!Shape2D@{Shape2D}}
+\index{Shape2D@{Shape2D}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{Shape2D()}{Shape2D()}}
+{\footnotesize\ttfamily My\+::\+Shape2\+D\+::\+Shape2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{My\+::\+Shape\+::\+Type}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_my_1_1_shape2_d_a051065ba65759ac7359ca7b640e3c370}\label{class_my_1_1_shape2_d_a051065ba65759ac7359ca7b640e3c370}} 
+\index{My::Shape2D@{My::Shape2D}!````~Shape2D@{$\sim$Shape2D}}
+\index{````~Shape2D@{$\sim$Shape2D}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shape2D()}{~Shape2D()}}
+{\footnotesize\ttfamily My\+::\+Shape2\+D\+::$\sim$\+Shape2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape2_d_afdbbf8e2acc6b31d8a3b6d2c3fb35672}\label{class_my_1_1_shape2_d_afdbbf8e2acc6b31d8a3b6d2c3fb35672}} 
+\index{My::Shape2D@{My::Shape2D}!draw@{draw}}
+\index{draw@{draw}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void My\+::\+Shape2\+D\+::draw (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+绘制标注形状虚函数 
+
+绘制函数，默认虚函数实现 
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_rectangle_a0e04c16f2b4d4264579ce8ba0eab3b49}{My\+::\+Rectangle}}, \mbox{\hyperlink{class_my_1_1_brush_ac954def75834c9d2ecdbf22c1db8a426}{My\+::\+Brush}}, \mbox{\hyperlink{class_my_1_1_circle_a0001a83c88dc2555317c0e619a4cbda6}{My\+::\+Circle}}, \mbox{\hyperlink{class_my_1_1_polygons_a6609ba691e9206a6ff16123909a586e5}{My\+::\+Polygons}}, and \mbox{\hyperlink{class_my_1_1_curve_ac41f7f9cce97e8a8466b417e3f018e19}{My\+::\+Curve}}.
+
+\mbox{\Hypertarget{class_my_1_1_shape2_d_acdd115a457cf3ce87f0a4e78987e31bd}\label{class_my_1_1_shape2_d_acdd115a457cf3ce87f0a4e78987e31bd}} 
+\index{My::Shape2D@{My::Shape2D}!isInShape@{isInShape}}
+\index{isInShape@{isInShape}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{isInShape()}{isInShape()}}
+{\footnotesize\ttfamily bool My\+::\+Shape2\+D\+::is\+In\+Shape (\begin{DoxyParamCaption}\item[{Q\+PointF}]{p,  }\item[{Q\+Widget $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+判断鼠标是否在标注形状内部虚函数 
+
+判断是否在形状内函数，默认虚函数实现 
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_rectangle_a35315ad37d53c545403e181b60ef9b4a}{My\+::\+Rectangle}}, \mbox{\hyperlink{class_my_1_1_brush_a960d5e0c281b8cc162a7899829ce2582}{My\+::\+Brush}}, \mbox{\hyperlink{class_my_1_1_circle_a664e2917aa572fd1367da555d359a39f}{My\+::\+Circle}}, \mbox{\hyperlink{class_my_1_1_polygons_a60970ca5bd2b6025928ab055f64d2756}{My\+::\+Polygons}}, and \mbox{\hyperlink{class_my_1_1_curve_ad0aed1f74e4bd6472f75586ac5b9dd82}{My\+::\+Curve}}.
+
+\mbox{\Hypertarget{class_my_1_1_shape2_d_a999a19c8bcd269b331e02c02d4dc6b9c}\label{class_my_1_1_shape2_d_a999a19c8bcd269b331e02c02d4dc6b9c}} 
+\index{My::Shape2D@{My::Shape2D}!offset@{offset}}
+\index{offset@{offset}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily void My\+::\+Shape2\+D\+::offset (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+偏移标注形状虚函数 
+
+pian\textquotesingle{}yi函数，默认虚函数实现 
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_rectangle_a0603dc36fa12627f5da3087078113499}{My\+::\+Rectangle}}, \mbox{\hyperlink{class_my_1_1_brush_a88112d0c4ebe5a9a2e86af1bc8dd16ad}{My\+::\+Brush}}, \mbox{\hyperlink{class_my_1_1_circle_aab7d4d7625f8cb4af250d00e5ac3aa3c}{My\+::\+Circle}}, \mbox{\hyperlink{class_my_1_1_polygons_a02a8aa03157a2ae4acc63fa86e41f812}{My\+::\+Polygons}}, and \mbox{\hyperlink{class_my_1_1_curve_af2bb97b23ee84a29b5df8153371a7b91}{My\+::\+Curve}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape2_d_a837e215942967335300ab4bf3efb463d}\label{class_my_1_1_shape2_d_a837e215942967335300ab4bf3efb463d}} 
+\index{My::Shape2D@{My::Shape2D}!points@{points}}
+\index{points@{points}!My::Shape2D@{My::Shape2D}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+PointF$>$ My\+::\+Shape2\+D\+::points}
+
+
+
+存储标注形状的像素点位 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_shape2_d_8h}{Shape2\+D.\+h}}\item 
+src/\mbox{\hyperlink{shape2d_8cpp}{shape2d.\+cpp}}\end{DoxyCompactItemize}

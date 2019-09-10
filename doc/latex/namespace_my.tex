@@ -1,0 +1,224 @@
+\hypertarget{namespace_my}{}\doxysection{My Namespace Reference}
+\label{namespace_my}\index{My@{My}}
+
+
+存放一些自定义组件和状态变量以及标注形状的命名空间  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_my_1_1_brush}{Brush}}
+\begin{DoxyCompactList}\small\item\em 代表画刷形状，即分割标注所用形状，继承\+Shape2\+D类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_brush3_d}{Brush3D}}
+\begin{DoxyCompactList}\small\item\em 代表画刷形状，用于3d分割标注，继承\+Shape3D \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_central_widget}{Central\+Widget}}
+\begin{DoxyCompactList}\small\item\em 中心组件基类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_circle}{Circle}}
+\begin{DoxyCompactList}\small\item\em 代表圆形状，继承\+Shape2\+D类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_command}{Command}}
+\begin{DoxyCompactList}\small\item\em 命令栈基类，用来实现撤销和重做功能 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_command2_d}{Command2D}}
+\begin{DoxyCompactList}\small\item\em 2d命令栈类，用于实现撤销和重做功能，继承\+Command类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_command3_d}{Command3D}}
+\begin{DoxyCompactList}\small\item\em 3d状态的命令栈类，用于实现撤销和重做功能，继承\+Command类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_curve}{Curve}}
+\begin{DoxyCompactList}\small\item\em 代表平滑曲线形状，继承\+Shape2\+D类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_label}{Label}}
+\begin{DoxyCompactList}\small\item\em 2d绘制图片及标注类，继承\+Q\+Label \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_label3_d}{Label3D}}
+\begin{DoxyCompactList}\small\item\em 3d绘制图片及标注类，继承\+Q\+Label \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_parse}{Parse}}
+\begin{DoxyCompactList}\small\item\em 负责解析标注文件以及图片 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_polygons}{Polygons}}
+\begin{DoxyCompactList}\small\item\em 代表多边形形状，继承\+Shape2\+D类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_rectangle}{Rectangle}}
+\begin{DoxyCompactList}\small\item\em 代表矩形形状，继承\+Shape2\+D类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_rectangle3_d}{Rectangle3D}}
+\begin{DoxyCompactList}\small\item\em 代表长方体形状，用于3d分割标注，继承\+Shape3D \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_shape}{Shape}}
+\begin{DoxyCompactList}\small\item\em 所有标注形状的基类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_shape2_d}{Shape2D}}
+\begin{DoxyCompactList}\small\item\em 2d标注形状的基类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_my_1_1_shape3_d}{Shape3D}}
+\begin{DoxyCompactList}\small\item\em 3d标注形状的基类 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{Status}} \{ \mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa5903d4fcb78e93ce80af74a582263d3b}{Edit}}, 
+\mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa02d00f886e83b993df8947ea7df649c7}{Focus}}, 
+\mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa6a1be33ffcb95bb6777ec0df84297d20}{Create}}
+ \}
+\begin{DoxyCompactList}\small\item\em 主窗口的状态变量 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{shape\+Status}} \{ \newline
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a7284ea43585269076feef315c0cb8c35}{Brush\+Shape}}, 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a43b3de4da2f566829c35bdc92dbad783}{Polygons\+Shape}}, 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a92b816cd713020eb4861137ee5be3e9c}{Rectangle\+Shape}}, 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4abcd08109cfed9fb4cbc89d37fbe06c83}{Circle\+Shape}}, 
+\newline
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a8a8f96267202dc7ba5dae76e77d3d54c}{Curve\+Shape}}, 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a81be9a976f4da048cc6d8c0eb1da2241}{No\+Shape}}, 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a4358b671f9def14ed7abdc6232a67797}{In\+Shape}}
+ \}
+\begin{DoxyCompactList}\small\item\em 中心组件状态 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}{Mode}} \{ \mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2aa4de0fc276db8e8e6fc5a9e14eeb3e59}{TwoD}}, 
+\mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2a2909bb6e6db5341c3ce4e1761cf39eb5}{ThreeD}}
+ \}
+\begin{DoxyCompactList}\small\item\em 主窗口模式状态变量 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3}{sync\+Status}} \{ \newline
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4913aff0de4a3bd646253f04a0edb7c8}{Add\+Shape}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a05b3eb1ac724ae2e8be5634ea870b888}{Add\+Point}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a06378dd094eff9fab7c5edff89828a76}{Selected}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3aab0ad8eeb3148c65b5cfcb40886f6bf1}{Remove}}, 
+\newline
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a658d1f76ab9b0fdaac4d6d5faac7c912}{Un\+Selected}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3af2c4f0e34e339bbd451b69c3380a9627}{Change\+Point}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a6f9910f1404d4c7ba81acaaef111b13b}{Show\+Message}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a5164660d4454247e6e587adf6ce6d33c}{Hovered}}, 
+\newline
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4a23daff1f7f6ba7f3f5d3334b39e7e1}{Un\+Hovered}}, 
+\mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3add4d81746575471b42d117395bae3556}{Offset}}
+ \}
+\begin{DoxyCompactList}\small\item\em 3d组件对label3d的统一接口中同步状态变量 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+存放一些自定义组件和状态变量以及标注形状的命名空间 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}\label{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}} 
+\index{My@{My}!Mode@{Mode}}
+\index{Mode@{Mode}!My@{My}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}{My\+::\+Mode}}}
+
+
+
+主窗口模式状态变量 
+
+Two\+D代表处于2d状态，\+Three\+D代表处于3d状态 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoD@{TwoD}!My@{My}}\index{My@{My}!TwoD@{TwoD}}}\mbox{\Hypertarget{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2aa4de0fc276db8e8e6fc5a9e14eeb3e59}\label{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2aa4de0fc276db8e8e6fc5a9e14eeb3e59}} 
+TwoD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThreeD@{ThreeD}!My@{My}}\index{My@{My}!ThreeD@{ThreeD}}}\mbox{\Hypertarget{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2a2909bb6e6db5341c3ce4e1761cf39eb5}\label{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2a2909bb6e6db5341c3ce4e1761cf39eb5}} 
+ThreeD&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}} 
+\index{My@{My}!shapeStatus@{shapeStatus}}
+\index{shapeStatus@{shapeStatus}!My@{My}}
+\doxysubsubsection{\texorpdfstring{shapeStatus}{shapeStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}}}
+
+
+
+中心组件状态 
+
+noshape表明此时鼠标不在标注形状内部，且不在创建状态，inshape表明此时鼠标在标注形状内部，brushshape表明此时处于创建画刷状态，（分割标注） rectangleshape表明此时处于绘制矩形状态，circleshape表明处于创建圆形状态，polygonsshape表明处于创建多边形状态，curveshape表明处于创建平滑曲线状态 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BrushShape@{BrushShape}!My@{My}}\index{My@{My}!BrushShape@{BrushShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a7284ea43585269076feef315c0cb8c35}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a7284ea43585269076feef315c0cb8c35}} 
+Brush\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PolygonsShape@{PolygonsShape}!My@{My}}\index{My@{My}!PolygonsShape@{PolygonsShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a43b3de4da2f566829c35bdc92dbad783}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a43b3de4da2f566829c35bdc92dbad783}} 
+Polygons\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RectangleShape@{RectangleShape}!My@{My}}\index{My@{My}!RectangleShape@{RectangleShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a92b816cd713020eb4861137ee5be3e9c}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a92b816cd713020eb4861137ee5be3e9c}} 
+Rectangle\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CircleShape@{CircleShape}!My@{My}}\index{My@{My}!CircleShape@{CircleShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4abcd08109cfed9fb4cbc89d37fbe06c83}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4abcd08109cfed9fb4cbc89d37fbe06c83}} 
+Circle\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurveShape@{CurveShape}!My@{My}}\index{My@{My}!CurveShape@{CurveShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a8a8f96267202dc7ba5dae76e77d3d54c}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a8a8f96267202dc7ba5dae76e77d3d54c}} 
+Curve\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoShape@{NoShape}!My@{My}}\index{My@{My}!NoShape@{NoShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a81be9a976f4da048cc6d8c0eb1da2241}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a81be9a976f4da048cc6d8c0eb1da2241}} 
+No\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InShape@{InShape}!My@{My}}\index{My@{My}!InShape@{InShape}}}\mbox{\Hypertarget{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a4358b671f9def14ed7abdc6232a67797}\label{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4a4358b671f9def14ed7abdc6232a67797}} 
+In\+Shape&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}\label{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}} 
+\index{My@{My}!Status@{Status}}
+\index{Status@{Status}!My@{My}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{My\+::\+Status}}}
+
+
+
+主窗口的状态变量 
+
+edit为默认状态，此时处于编辑标注的状态，focus为选中状态，表明此时有标注被选中，可以进行响应的操作，create为创建标注状态，表明此时正在创建标注 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Edit@{Edit}!My@{My}}\index{My@{My}!Edit@{Edit}}}\mbox{\Hypertarget{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa5903d4fcb78e93ce80af74a582263d3b}\label{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa5903d4fcb78e93ce80af74a582263d3b}} 
+Edit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focus@{Focus}!My@{My}}\index{My@{My}!Focus@{Focus}}}\mbox{\Hypertarget{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa02d00f886e83b993df8947ea7df649c7}\label{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa02d00f886e83b993df8947ea7df649c7}} 
+Focus&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Create@{Create}!My@{My}}\index{My@{My}!Create@{Create}}}\mbox{\Hypertarget{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa6a1be33ffcb95bb6777ec0df84297d20}\label{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105aa6a1be33ffcb95bb6777ec0df84297d20}} 
+Create&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3}} 
+\index{My@{My}!syncStatus@{syncStatus}}
+\index{syncStatus@{syncStatus}!My@{My}}
+\doxysubsubsection{\texorpdfstring{syncStatus}{syncStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3}{My\+::sync\+Status}}}
+
+
+
+3d组件对label3d的统一接口中同步状态变量 
+
+addshape表明添加标注形状，addpoint表明添加像素点，selected表明选中，unselected表明未选中，remove表明移除正在创建的形状 changepoint表明更改正在绘制的像素点，showmessage表明显示鼠标坐标，hovered表明鼠标在该标注形状内，unhovered表明鼠标已不在该标注形状内，offset表明偏移标注位置 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AddShape@{AddShape}!My@{My}}\index{My@{My}!AddShape@{AddShape}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4913aff0de4a3bd646253f04a0edb7c8}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4913aff0de4a3bd646253f04a0edb7c8}} 
+Add\+Shape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AddPoint@{AddPoint}!My@{My}}\index{My@{My}!AddPoint@{AddPoint}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a05b3eb1ac724ae2e8be5634ea870b888}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a05b3eb1ac724ae2e8be5634ea870b888}} 
+Add\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Selected@{Selected}!My@{My}}\index{My@{My}!Selected@{Selected}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a06378dd094eff9fab7c5edff89828a76}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a06378dd094eff9fab7c5edff89828a76}} 
+Selected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Remove@{Remove}!My@{My}}\index{My@{My}!Remove@{Remove}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3aab0ad8eeb3148c65b5cfcb40886f6bf1}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3aab0ad8eeb3148c65b5cfcb40886f6bf1}} 
+Remove&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UnSelected@{UnSelected}!My@{My}}\index{My@{My}!UnSelected@{UnSelected}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a658d1f76ab9b0fdaac4d6d5faac7c912}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a658d1f76ab9b0fdaac4d6d5faac7c912}} 
+Un\+Selected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChangePoint@{ChangePoint}!My@{My}}\index{My@{My}!ChangePoint@{ChangePoint}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3af2c4f0e34e339bbd451b69c3380a9627}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3af2c4f0e34e339bbd451b69c3380a9627}} 
+Change\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ShowMessage@{ShowMessage}!My@{My}}\index{My@{My}!ShowMessage@{ShowMessage}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a6f9910f1404d4c7ba81acaaef111b13b}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a6f9910f1404d4c7ba81acaaef111b13b}} 
+Show\+Message&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hovered@{Hovered}!My@{My}}\index{My@{My}!Hovered@{Hovered}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a5164660d4454247e6e587adf6ce6d33c}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a5164660d4454247e6e587adf6ce6d33c}} 
+Hovered&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UnHovered@{UnHovered}!My@{My}}\index{My@{My}!UnHovered@{UnHovered}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4a23daff1f7f6ba7f3f5d3334b39e7e1}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3a4a23daff1f7f6ba7f3f5d3334b39e7e1}} 
+Un\+Hovered&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Offset@{Offset}!My@{My}}\index{My@{My}!Offset@{Offset}}}\mbox{\Hypertarget{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3add4d81746575471b42d117395bae3556}\label{namespace_my_ab33062ba2c48ba253bae3fd0eb187ae3add4d81746575471b42d117395bae3556}} 
+Offset&\\
+\hline
+
+\end{DoxyEnumFields}

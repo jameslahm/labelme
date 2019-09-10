@@ -1,0 +1,110 @@
+\hypertarget{class_my_1_1_brush}{}\doxysection{My\+::Brush Class Reference}
+\label{class_my_1_1_brush}\index{My::Brush@{My::Brush}}
+
+
+代表画刷形状，即分割标注所用形状，继承\+Shape2\+D类  
+
+
+
+
+{\ttfamily \#include $<$Brush.\+h$>$}
+
+Inheritance diagram for My\+::Brush\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_my_1_1_brush}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_brush_a5f34fec432ebd692ba4963f838af8c10}{Brush}} ()
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_brush_ac954def75834c9d2ecdbf22c1db8a426}{draw}} (Q\+Widget $\ast$w)
+\begin{DoxyCompactList}\small\item\em 绘制形状函数 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_my_1_1_brush_a960d5e0c281b8cc162a7899829ce2582}{is\+In\+Shape}} (Q\+PointF p, Q\+Widget $\ast$w)
+\begin{DoxyCompactList}\small\item\em 判断是否在形状内函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_brush_a88112d0c4ebe5a9a2e86af1bc8dd16ad}{offset}} (float x\+Offset, float y\+Offset)
+\begin{DoxyCompactList}\small\item\em 偏移形状函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ float $>$ \mbox{\hyperlink{class_my_1_1_brush_a8b338b5338e82afc54d5e7a0c6dd3342}{radius}}
+\begin{DoxyCompactList}\small\item\em 存储标注像素点的一系列绘制大小 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+代表画刷形状，即分割标注所用形状，继承\+Shape2\+D类 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_brush_a5f34fec432ebd692ba4963f838af8c10}\label{class_my_1_1_brush_a5f34fec432ebd692ba4963f838af8c10}} 
+\index{My::Brush@{My::Brush}!Brush@{Brush}}
+\index{Brush@{Brush}!My::Brush@{My::Brush}}
+\doxysubsubsection{\texorpdfstring{Brush()}{Brush()}}
+{\footnotesize\ttfamily My\+::\+Brush\+::\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_brush_ac954def75834c9d2ecdbf22c1db8a426}\label{class_my_1_1_brush_ac954def75834c9d2ecdbf22c1db8a426}} 
+\index{My::Brush@{My::Brush}!draw@{draw}}
+\index{draw@{draw}!My::Brush@{My::Brush}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void My\+::\+Brush\+::draw (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+绘制形状函数 
+
+绘制画刷形状（分割标注） 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_shape2_d_afdbbf8e2acc6b31d8a3b6d2c3fb35672}{My\+::\+Shape2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_brush_a960d5e0c281b8cc162a7899829ce2582}\label{class_my_1_1_brush_a960d5e0c281b8cc162a7899829ce2582}} 
+\index{My::Brush@{My::Brush}!isInShape@{isInShape}}
+\index{isInShape@{isInShape}!My::Brush@{My::Brush}}
+\doxysubsubsection{\texorpdfstring{isInShape()}{isInShape()}}
+{\footnotesize\ttfamily bool My\+::\+Brush\+::is\+In\+Shape (\begin{DoxyParamCaption}\item[{Q\+PointF}]{p,  }\item[{Q\+Widget $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+判断是否在形状内函数 
+
+判断鼠标是否在分割标注内部 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_shape2_d_acdd115a457cf3ce87f0a4e78987e31bd}{My\+::\+Shape2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_brush_a88112d0c4ebe5a9a2e86af1bc8dd16ad}\label{class_my_1_1_brush_a88112d0c4ebe5a9a2e86af1bc8dd16ad}} 
+\index{My::Brush@{My::Brush}!offset@{offset}}
+\index{offset@{offset}!My::Brush@{My::Brush}}
+\doxysubsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily void My\+::\+Brush\+::offset (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+偏移形状函数 
+
+标注形状偏移 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_shape2_d_a999a19c8bcd269b331e02c02d4dc6b9c}{My\+::\+Shape2D}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_brush_a8b338b5338e82afc54d5e7a0c6dd3342}\label{class_my_1_1_brush_a8b338b5338e82afc54d5e7a0c6dd3342}} 
+\index{My::Brush@{My::Brush}!radius@{radius}}
+\index{radius@{radius}!My::Brush@{My::Brush}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily Q\+Vector$<$float$>$ My\+::\+Brush\+::radius}
+
+
+
+存储标注像素点的一系列绘制大小 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_brush_8h}{Brush.\+h}}\item 
+src/\mbox{\hyperlink{brush_8cpp}{brush.\+cpp}}\end{DoxyCompactItemize}

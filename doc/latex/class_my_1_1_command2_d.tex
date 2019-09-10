@@ -1,0 +1,157 @@
+\hypertarget{class_my_1_1_command2_d}{}\doxysection{My\+::Command2D Class Reference}
+\label{class_my_1_1_command2_d}\index{My::Command2D@{My::Command2D}}
+
+
+2d命令栈类，用于实现撤销和重做功能，继承\+Command类  
+
+
+
+
+{\ttfamily \#include $<$command2d.\+h$>$}
+
+Inheritance diagram for My\+::Command2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_1_1_command2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_a7ba306b9d82cfbd0192237e5d07f9e0b}{log\+Add}} (int index)
+\begin{DoxyCompactList}\small\item\em 记录添加标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_a98cc605056a9748d1ba441aa72e5bf3d}{log\+Delete}} (int index, int id)
+\begin{DoxyCompactList}\small\item\em 记录删除标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_aa133d95b3be08a6bab796bdda7515dd4}{log\+Move}} (int index, float xoffset, float yoffset, int id=0)
+\begin{DoxyCompactList}\small\item\em 记录移动标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_acbadcc226e42377ca522526e5374c36d}{log\+Change}} (int index, Q\+String s1, Q\+String s2)
+\begin{DoxyCompactList}\small\item\em 记录更改标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_a8d237495afa22c5219ad22291fd33ef2}{undo}} ()
+\begin{DoxyCompactList}\small\item\em 撤销功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command2_d_a6be24b6509f2e1b64babb9956bd79d58}{redo}} ()
+\begin{DoxyCompactList}\small\item\em 重做功能 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_1_1_command2_d_adb276ac6fefa6b5a455eb280ac478d28}{$\sim$\+Command2D}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}} $\ast$ \mbox{\hyperlink{class_my_1_1_command2_d_ae3f993dd826accede7140cf77274fd6e}{manager}}
+\begin{DoxyCompactList}\small\item\em 存放中心组件指针 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+2d命令栈类，用于实现撤销和重做功能，继承\+Command类 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_command2_d_adb276ac6fefa6b5a455eb280ac478d28}\label{class_my_1_1_command2_d_adb276ac6fefa6b5a455eb280ac478d28}} 
+\index{My::Command2D@{My::Command2D}!````~Command2D@{$\sim$Command2D}}
+\index{````~Command2D@{$\sim$Command2D}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command2D()}{~Command2D()}}
+{\footnotesize\ttfamily My\+::\+Command2\+D\+::$\sim$\+Command2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_command2_d_a7ba306b9d82cfbd0192237e5d07f9e0b}\label{class_my_1_1_command2_d_a7ba306b9d82cfbd0192237e5d07f9e0b}} 
+\index{My::Command2D@{My::Command2D}!logAdd@{logAdd}}
+\index{logAdd@{logAdd}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{logAdd()}{logAdd()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::log\+Add (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录添加标注 
+
+2d中心组件的记录添加 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a963f572d5f1afeb4fb592314a8a2bab5}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command2_d_acbadcc226e42377ca522526e5374c36d}\label{class_my_1_1_command2_d_acbadcc226e42377ca522526e5374c36d}} 
+\index{My::Command2D@{My::Command2D}!logChange@{logChange}}
+\index{logChange@{logChange}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{logChange()}{logChange()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::log\+Change (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{Q\+String}]{s1,  }\item[{Q\+String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录更改标注 
+
+2d中心组件的记录改变 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_ae60261502fea64d048257a7de45ae2f7}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command2_d_a98cc605056a9748d1ba441aa72e5bf3d}\label{class_my_1_1_command2_d_a98cc605056a9748d1ba441aa72e5bf3d}} 
+\index{My::Command2D@{My::Command2D}!logDelete@{logDelete}}
+\index{logDelete@{logDelete}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{logDelete()}{logDelete()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::log\+Delete (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录删除标注 
+
+2d中心组件的记录删除 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a4128ef23b6bb050a51dfa0a9522be8bf}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command2_d_aa133d95b3be08a6bab796bdda7515dd4}\label{class_my_1_1_command2_d_aa133d95b3be08a6bab796bdda7515dd4}} 
+\index{My::Command2D@{My::Command2D}!logMove@{logMove}}
+\index{logMove@{logMove}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{logMove()}{logMove()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::log\+Move (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录移动标注 
+
+2d中心组件的记录移动 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_aa7925d85940b23daa4b4635006ec3034}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command2_d_a6be24b6509f2e1b64babb9956bd79d58}\label{class_my_1_1_command2_d_a6be24b6509f2e1b64babb9956bd79d58}} 
+\index{My::Command2D@{My::Command2D}!redo@{redo}}
+\index{redo@{redo}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{redo()}{redo()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重做功能 
+
+2d中心组件的重做动作 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a4dc178f7ce35fd687dd6cecad0cba588}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command2_d_a8d237495afa22c5219ad22291fd33ef2}\label{class_my_1_1_command2_d_a8d237495afa22c5219ad22291fd33ef2}} 
+\index{My::Command2D@{My::Command2D}!undo@{undo}}
+\index{undo@{undo}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily void My\+::\+Command2\+D\+::undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+撤销功能 
+
+2d中心组件的撤销动作 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a5015d21ddaeeba4e844483d116f7c21a}{My\+::\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_command2_d_ae3f993dd826accede7140cf77274fd6e}\label{class_my_1_1_command2_d_ae3f993dd826accede7140cf77274fd6e}} 
+\index{My::Command2D@{My::Command2D}!manager@{manager}}
+\index{manager@{manager}!My::Command2D@{My::Command2D}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}}$\ast$ My\+::\+Command2\+D\+::manager}
+
+
+
+存放中心组件指针 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{command2d_8h}{command2d.\+h}}\item 
+src/\mbox{\hyperlink{command2d_8cpp}{command2d.\+cpp}}\end{DoxyCompactItemize}

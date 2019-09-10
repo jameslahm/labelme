@@ -1,0 +1,205 @@
+\hypertarget{class_actions_init}{}\doxysection{Actions\+Init Class Reference}
+\label{class_actions_init}\index{ActionsInit@{ActionsInit}}
+
+
+负责所有\+Q\+Action的管理，以及主窗口各组件\+Q\+Action的初始化和状态管理  
+
+
+
+
+{\ttfamily \#include $<$Actions\+Init.\+h$>$}
+
+Inheritance diagram for Actions\+Init\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_actions_init}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_actions_init_a1e400de8f87b28d6f060e6076646c647}{Actions\+Init}} (Q\+Widget $\ast$parent)
+\item 
+void \mbox{\hyperlink{class_actions_init_afe46649ae7a4c8720fccd26d46bf474e}{set\+Up}} (Q\+Main\+Window $\ast$w)
+\begin{DoxyCompactList}\small\item\em 主窗口所有\+Q\+Action的初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_a60070fda6d2a01fab96ffa730320fb75}{set\+Up}} (Q\+Menu\+Bar $\ast$mbar)
+\begin{DoxyCompactList}\small\item\em 初始化菜单栏上的所有动作 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_aa90f197a78f1ce4b6f83ad9d6f560f3b}{set\+Up}} (Q\+Status\+Bar $\ast$sbar)
+\begin{DoxyCompactList}\small\item\em 初始化状态栏上的所有动作 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_abcd7b867c6540701fddbc0d82953d927}{set\+Up}} (Q\+Tool\+Bar $\ast$tbar)
+\begin{DoxyCompactList}\small\item\em 初始化工具栏上的所有动作 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_aa3cfb7477dda6e6c9efb49066f29567f}{init\+Status}} (bool b)
+\begin{DoxyCompactList}\small\item\em 负责状态初始化，当主窗口需要状态初始化时，调用该函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_a642bfc01a5f7b24c8d8dd831f2139fe4}{enable\+Action}} (Q\+String s)
+\begin{DoxyCompactList}\small\item\em 对外的接口，控制\+Q\+Action的enable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_a9dba4465f7ea91a67b93f19d1884c133}{disable\+Action}} (Q\+String s)
+\begin{DoxyCompactList}\small\item\em 对外的接口，控制\+Q\+Action的disable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_ac683c0694cbc17558d4ea4ea308a2dd9}{set\+Status}} (\mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{My\+::\+Status}} status)
+\begin{DoxyCompactList}\small\item\em 根据主窗口的状态，同步更改\+Q\+Action的状态 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_a084f09550358fb13d01e14865da5228b}{toggle\+Action}} (Q\+String s, bool b)
+\begin{DoxyCompactList}\small\item\em 切换动作的checkstate \end{DoxyCompactList}\item 
+Q\+Menu $\ast$ \mbox{\hyperlink{class_actions_init_aa1428d5f48d273fc9e2de3c449c34ca1}{set\+Up\+Central\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em 中心组件右键菜单 \end{DoxyCompactList}\item 
+Q\+Menu $\ast$ \mbox{\hyperlink{class_actions_init_adbe9e0edb1fe9a4a5d1fb848b64ead79}{set\+Up\+Labels\+D\+W\+Init}} ()
+\begin{DoxyCompactList}\small\item\em 标签列表组件右键菜单 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_actions_init_a0ff6932eefcc6ec995e491dc9dc0ea81}{create\+Shape}} (\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}} s)
+\begin{DoxyCompactList}\small\item\em 创建标注时的动作状态管理 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Map$<$ Q\+String, Q\+Action $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_actions_init_a7c1795c5fe66bb89de8f0155b9d6bdd8}{map}}
+\begin{DoxyCompactList}\small\item\em 存储所有\+Q\+Action，键为\+Q\+Action的名字，值为对应的指针 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+负责所有\+Q\+Action的管理，以及主窗口各组件\+Q\+Action的初始化和状态管理 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_actions_init_a1e400de8f87b28d6f060e6076646c647}\label{class_actions_init_a1e400de8f87b28d6f060e6076646c647}} 
+\index{ActionsInit@{ActionsInit}!ActionsInit@{ActionsInit}}
+\index{ActionsInit@{ActionsInit}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{ActionsInit()}{ActionsInit()}}
+{\footnotesize\ttfamily Actions\+Init\+::\+Actions\+Init (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_actions_init_a0ff6932eefcc6ec995e491dc9dc0ea81}\label{class_actions_init_a0ff6932eefcc6ec995e491dc9dc0ea81}} 
+\index{ActionsInit@{ActionsInit}!createShape@{createShape}}
+\index{createShape@{createShape}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{createShape()}{createShape()}}
+{\footnotesize\ttfamily void Actions\+Init\+::create\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}}}]{s }\end{DoxyParamCaption})}
+
+
+
+创建标注时的动作状态管理 
+
+主窗口创建功能触发时，会调用该函数根据创建的形状进行动作状态的同步 \mbox{\Hypertarget{class_actions_init_a9dba4465f7ea91a67b93f19d1884c133}\label{class_actions_init_a9dba4465f7ea91a67b93f19d1884c133}} 
+\index{ActionsInit@{ActionsInit}!disableAction@{disableAction}}
+\index{disableAction@{disableAction}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{disableAction()}{disableAction()}}
+{\footnotesize\ttfamily void Actions\+Init\+::disable\+Action (\begin{DoxyParamCaption}\item[{Q\+String}]{s }\end{DoxyParamCaption})}
+
+
+
+对外的接口，控制\+Q\+Action的disable 
+
+对外接口，使动作disable \mbox{\Hypertarget{class_actions_init_a642bfc01a5f7b24c8d8dd831f2139fe4}\label{class_actions_init_a642bfc01a5f7b24c8d8dd831f2139fe4}} 
+\index{ActionsInit@{ActionsInit}!enableAction@{enableAction}}
+\index{enableAction@{enableAction}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{enableAction()}{enableAction()}}
+{\footnotesize\ttfamily void Actions\+Init\+::enable\+Action (\begin{DoxyParamCaption}\item[{Q\+String}]{s }\end{DoxyParamCaption})}
+
+
+
+对外的接口，控制\+Q\+Action的enable 
+
+对外接口，使动作enable \mbox{\Hypertarget{class_actions_init_aa3cfb7477dda6e6c9efb49066f29567f}\label{class_actions_init_aa3cfb7477dda6e6c9efb49066f29567f}} 
+\index{ActionsInit@{ActionsInit}!initStatus@{initStatus}}
+\index{initStatus@{initStatus}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{initStatus()}{initStatus()}}
+{\footnotesize\ttfamily void Actions\+Init\+::init\+Status (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+负责状态初始化，当主窗口需要状态初始化时，调用该函数 
+
+初始化状态 \mbox{\Hypertarget{class_actions_init_ac683c0694cbc17558d4ea4ea308a2dd9}\label{class_actions_init_ac683c0694cbc17558d4ea4ea308a2dd9}} 
+\index{ActionsInit@{ActionsInit}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily void Actions\+Init\+::set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{My\+::\+Status}}}]{status }\end{DoxyParamCaption})}
+
+
+
+根据主窗口的状态，同步更改\+Q\+Action的状态 
+
+主窗口状态改变时，会调用该函数同步更改动作的状态 \mbox{\Hypertarget{class_actions_init_afe46649ae7a4c8720fccd26d46bf474e}\label{class_actions_init_afe46649ae7a4c8720fccd26d46bf474e}} 
+\index{ActionsInit@{ActionsInit}!setUp@{setUp}}
+\index{setUp@{setUp}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Actions\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Main\+Window $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+主窗口所有\+Q\+Action的初始化 
+
+主窗口所有动作的初始化生成 \mbox{\Hypertarget{class_actions_init_a60070fda6d2a01fab96ffa730320fb75}\label{class_actions_init_a60070fda6d2a01fab96ffa730320fb75}} 
+\index{ActionsInit@{ActionsInit}!setUp@{setUp}}
+\index{setUp@{setUp}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Actions\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Menu\+Bar $\ast$}]{mbar }\end{DoxyParamCaption})}
+
+
+
+初始化菜单栏上的所有动作 
+
+菜单栏所有动作的初始化 \mbox{\Hypertarget{class_actions_init_aa90f197a78f1ce4b6f83ad9d6f560f3b}\label{class_actions_init_aa90f197a78f1ce4b6f83ad9d6f560f3b}} 
+\index{ActionsInit@{ActionsInit}!setUp@{setUp}}
+\index{setUp@{setUp}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Actions\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Status\+Bar $\ast$}]{sbar }\end{DoxyParamCaption})}
+
+
+
+初始化状态栏上的所有动作 
+
+状态栏所有动作的初始化 \mbox{\Hypertarget{class_actions_init_abcd7b867c6540701fddbc0d82953d927}\label{class_actions_init_abcd7b867c6540701fddbc0d82953d927}} 
+\index{ActionsInit@{ActionsInit}!setUp@{setUp}}
+\index{setUp@{setUp}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Actions\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Tool\+Bar $\ast$}]{tbar }\end{DoxyParamCaption})}
+
+
+
+初始化工具栏上的所有动作 
+
+工具栏所有动作的初始化 \mbox{\Hypertarget{class_actions_init_aa1428d5f48d273fc9e2de3c449c34ca1}\label{class_actions_init_aa1428d5f48d273fc9e2de3c449c34ca1}} 
+\index{ActionsInit@{ActionsInit}!setUpCentralWidget@{setUpCentralWidget}}
+\index{setUpCentralWidget@{setUpCentralWidget}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUpCentralWidget()}{setUpCentralWidget()}}
+{\footnotesize\ttfamily Q\+Menu $\ast$ Actions\+Init\+::set\+Up\+Central\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+中心组件右键菜单 
+
+中心组件右键菜单动作管理 \mbox{\Hypertarget{class_actions_init_adbe9e0edb1fe9a4a5d1fb848b64ead79}\label{class_actions_init_adbe9e0edb1fe9a4a5d1fb848b64ead79}} 
+\index{ActionsInit@{ActionsInit}!setUpLabelsDWInit@{setUpLabelsDWInit}}
+\index{setUpLabelsDWInit@{setUpLabelsDWInit}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{setUpLabelsDWInit()}{setUpLabelsDWInit()}}
+{\footnotesize\ttfamily Q\+Menu $\ast$ Actions\+Init\+::set\+Up\+Labels\+D\+W\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+标签列表组件右键菜单 
+
+标签列表组件右键菜单动作管理 \mbox{\Hypertarget{class_actions_init_a084f09550358fb13d01e14865da5228b}\label{class_actions_init_a084f09550358fb13d01e14865da5228b}} 
+\index{ActionsInit@{ActionsInit}!toggleAction@{toggleAction}}
+\index{toggleAction@{toggleAction}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{toggleAction()}{toggleAction()}}
+{\footnotesize\ttfamily void Actions\+Init\+::toggle\+Action (\begin{DoxyParamCaption}\item[{Q\+String}]{s,  }\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+切换动作的checkstate 
+
+对外接口，管理动作的checkstate 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_actions_init_a7c1795c5fe66bb89de8f0155b9d6bdd8}\label{class_actions_init_a7c1795c5fe66bb89de8f0155b9d6bdd8}} 
+\index{ActionsInit@{ActionsInit}!map@{map}}
+\index{map@{map}!ActionsInit@{ActionsInit}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily Q\+Map$<$Q\+String,Q\+Action$\ast$$>$$\ast$ Actions\+Init\+::map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+存储所有\+Q\+Action，键为\+Q\+Action的名字，值为对应的指针 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_actions_init_8h}{Actions\+Init.\+h}}\item 
+src/\mbox{\hyperlink{actionsinit_8cpp}{actionsinit.\+cpp}}\end{DoxyCompactItemize}

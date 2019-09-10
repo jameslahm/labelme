@@ -1,0 +1,719 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+主窗口  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ab621156b962f31cedbbf839da1dcacdb}{file\+Name\+Changed}} (Q\+String \mbox{\hyperlink{class_main_window_a06968aebc42a16ab51c5888b4784075d}{file\+Name}}, Q\+String labelfile\+Name)
+\begin{DoxyCompactList}\small\item\em 文件改变信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a601d9e90682b66c51fe1746b03ee0623}{status\+Init}} (bool b)
+\begin{DoxyCompactList}\small\item\em 状态初始化信号 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_aecf2bdecbb8a321e40b47c50ab176c6a}{change\+State}} (int index, bool b)
+\begin{DoxyCompactList}\small\item\em 改变状态槽函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aa41cd34692e4c3db64ea84b92be28979}{changefile}} (Q\+List\+Widget\+Item $\ast$current, Q\+List\+Widget\+Item $\ast$prvious)
+\begin{DoxyCompactList}\small\item\em 切换文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8349b9b372605b330eb8957d232f8ef6}{openfile}} ()
+\begin{DoxyCompactList}\small\item\em 打开文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a45344abf30a71e5508c2b420f7547fc5}{nextimage}} ()
+\begin{DoxyCompactList}\small\item\em 下一张图片 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aae137b33ae9c7e9123424771c7d4cd43}{previmage}} ()
+\begin{DoxyCompactList}\small\item\em 上一张图片 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a496f65558e80a834fb03be884f532086}{opendir}} ()
+\begin{DoxyCompactList}\small\item\em 打开文件夹 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3ba1a371fb10e731ae0926ae85efeb4f}{save}} ()
+\begin{DoxyCompactList}\small\item\em 保存文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a20f32cb1548a1c88818ed58cc940b229}{saveas}} ()
+\begin{DoxyCompactList}\small\item\em 另存文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aec735826a19e059ff2bfec8ad3e7475f}{saveautomatically}} ()
+\begin{DoxyCompactList}\small\item\em 自动保存 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a595a96e877bbdd7cbdc638a5432396c2}{changeoutputdir}} ()
+\begin{DoxyCompactList}\small\item\em 切换输出文件夹 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5b2944ddd0e28276113fd614e132a88b}{closefile}} ()
+\begin{DoxyCompactList}\small\item\em 关闭文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3f32adf1dadae7a96e314f88e5f36ffa}{deletefile}} ()
+\begin{DoxyCompactList}\small\item\em 删除文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}{quit}} ()
+\begin{DoxyCompactList}\small\item\em 退出程序 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a6aaf0f81d01b3cfc77f811e1015c2327}{createbrush}} ()
+\begin{DoxyCompactList}\small\item\em 创建画刷（分割标注） \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a56a67453565aab9e608c634e9dc3af6f}{createrectangle}} ()
+\begin{DoxyCompactList}\small\item\em 创建矩形 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a05d2ca7b947f34b82d3d78210c89f60a}{createpolygons}} ()
+\begin{DoxyCompactList}\small\item\em 创建多边形 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a44713cf7515ee1ceb216060d98bde253}{createcircle}} ()
+\begin{DoxyCompactList}\small\item\em 创建圆 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3405f719f17c182bbc11867d776cf01a}{createcurve}} ()
+\begin{DoxyCompactList}\small\item\em 创建平滑曲线 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5249744ca4dc13578dc56424dbb55597}{editpolygons}} ()
+\begin{DoxyCompactList}\small\item\em 编辑标注形状 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af418944995a77d318baabd964542c629}{editlabel}} ()
+\begin{DoxyCompactList}\small\item\em 编辑标注标签文字 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a805c636328f942676fdb0ed68a236ee7}{deletepolygons}} ()
+\begin{DoxyCompactList}\small\item\em 删除标注 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7ed53c4e1d2bf9321ed5df917b55d40a}{undo}} ()
+\begin{DoxyCompactList}\small\item\em 撤销 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a21b622c0f1855274d69f32421f10b251}{redo}} ()
+\begin{DoxyCompactList}\small\item\em 重做 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ab9a7c10faf0add18b59501931d1f80a5}{undolastpoint}} ()
+\begin{DoxyCompactList}\small\item\em 撤销正在创建的标注形状 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a2cba9e6d37b415431fc555b61cf20b37}{editbrush}} ()
+\begin{DoxyCompactList}\small\item\em 编辑画刷大小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9a2598a8a8e02c101354f7cdedcf8573}{polygonlabels}} (bool b)
+\begin{DoxyCompactList}\small\item\em 标签列表组件是否显示 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a12148fe283e7375f72e19a3dafc0e1d7}{filelist}} (bool b)
+\begin{DoxyCompactList}\small\item\em 文件列表组件是否显示 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a81141da70295bb92ecfaae43f1669676}{hidepolygons}} ()
+\begin{DoxyCompactList}\small\item\em 隐藏标注形状 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a0ac76460316e7c2cb51296e5e2c4a741}{showpolygons}} ()
+\begin{DoxyCompactList}\small\item\em 显示标注形状 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a571790691bad25c9861c0c487ba0ce43}{zoomin}} ()
+\begin{DoxyCompactList}\small\item\em 放大 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac54938e78f6b39c6b62cee61d75e8c22}{zoomout}} ()
+\begin{DoxyCompactList}\small\item\em 缩小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a62847c89c7f841c4bd0a0b93e590233d}{originalsize}} ()
+\begin{DoxyCompactList}\small\item\em 恢复原始大小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a89ab5504edc224d225ce0c074b745bf5}{fitwindow}} ()
+\begin{DoxyCompactList}\small\item\em 宽度适应中心组件宽度 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad32a8d2a3a00e8f96fd3d646fc569342}{editcolor}} ()
+\begin{DoxyCompactList}\small\item\em 编辑颜色 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad98fb35ce37a6bd2ef921530fa73a8ed}{magnifier}} (bool b)
+\begin{DoxyCompactList}\small\item\em 是否开启放大镜 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af0851068663242947f0af3e208eeb2a5}{import}} ()
+\begin{DoxyCompactList}\small\item\em 导入标注文件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a0c25eed4db1ba6708a1796b321dcd90b}{toggle3d}} (bool b)
+\begin{DoxyCompactList}\small\item\em 切换3d模式 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window}} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a9c4f542263838b9ecd06eae839a42a34}{key\+Press\+Event}} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 按键控制 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{close\+Event}} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 关闭事件重写 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{My\+::\+Status}} \mbox{\hyperlink{class_main_window_a31d095f6a1c4251b0266a6b066f0db0b}{status}} =My\+::\+Status\+::\+Edit
+\begin{DoxyCompactList}\small\item\em 主窗口状态变量 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}{My\+::\+Mode}} \mbox{\hyperlink{class_main_window_ac553f8a1acb8a115227b1c9b5d77b488}{mode}} =\mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2aa4de0fc276db8e8e6fc5a9e14eeb3e59}{My\+::\+TwoD}}
+\begin{DoxyCompactList}\small\item\em 模式变量 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_actions_init}{Actions\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_ab64a47db45f9d79411a5cf6d9e69ff7d}{actionsinit}}
+\begin{DoxyCompactList}\small\item\em 动作管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menubar_init}{Menubar\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_ab750f3c7e19f38bb68cedc3b1688cc6b}{mbarinit}}
+\begin{DoxyCompactList}\small\item\em 菜单栏管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_toolbar_init}{Toolbar\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_a78c416fa8828af73483e3f4f1094b778}{tbarinit}}
+\begin{DoxyCompactList}\small\item\em 工具栏管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_labels_d_w_init}{Labels\+D\+W\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_a9e9f41ce5192be5271d6e05c207d1366}{labelsinit}}
+\begin{DoxyCompactList}\small\item\em 标签列表管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_files_d_w_init}{Files\+D\+W\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_a7cb6d4ab199b36eaf9afa86f6faf273b}{filesinit}}
+\begin{DoxyCompactList}\small\item\em 文件列表管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statusbar_init}{Statusbar\+Init}} $\ast$ \mbox{\hyperlink{class_main_window_a111aea8cebf124ea9ef5efb9e7149651}{sbarinit}}
+\begin{DoxyCompactList}\small\item\em 状态栏管理组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_1_1_central_widget}{My\+::\+Central\+Widget}} $\ast$ \mbox{\hyperlink{class_main_window_ab55d7652d951de7df28bd8b9458ee13d}{centralwidget}}
+\begin{DoxyCompactList}\small\item\em 中心组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}} $\ast$ \mbox{\hyperlink{class_main_window_a2a44e56395cf02b851e9600fe8c2ff2a}{centralwidget2d}}
+\begin{DoxyCompactList}\small\item\em 2d中心组件 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}} $\ast$ \mbox{\hyperlink{class_main_window_a7875165d5dfc54fd458c607605389888}{centralwidget3d}}
+\begin{DoxyCompactList}\small\item\em 3d中心组件 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_main_window_a06968aebc42a16ab51c5888b4784075d}{file\+Name}}
+\begin{DoxyCompactList}\small\item\em 文件名 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_main_window_a187cb4c31b68a9c1cafbd0a13534f7bb}{dir\+Name}}
+\begin{DoxyCompactList}\small\item\em 目录名 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+主窗口 
+
+\mbox{\hyperlink{class_main_window}{Main\+Window}} 类是主窗口类，采用 策略模式进行管理，成员变量包括窗口的各个组件部分（代理）， 所有的\+U\+I界面的设计及初始化均在组件的setup函数中完成。\+Main\+Window只负责消息的传递， 包括信号与槽的连接、\+Q\+Action的触发和消息的转发等等，不负责具体的处理， 具体的处理全部分别交由具体的组件。组件包括动作管理组件，菜单栏管理组件，状态栏管理组件，工具栏管理组件，标签列表管理组件， 文件列表管理组件以及中心窗口组件 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+构造函数 
+
+构造函数，各个组件的初始化以及信号槽的连接 \mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aa41cd34692e4c3db64ea84b92be28979}\label{class_main_window_aa41cd34692e4c3db64ea84b92be28979}} 
+\index{MainWindow@{MainWindow}!changefile@{changefile}}
+\index{changefile@{changefile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changefile()}{changefile()}}
+{\footnotesize\ttfamily void Main\+Window\+::changefile (\begin{DoxyParamCaption}\item[{Q\+List\+Widget\+Item $\ast$}]{current,  }\item[{Q\+List\+Widget\+Item $\ast$}]{previous }\end{DoxyParamCaption})}
+
+
+
+切换文件 
+
+改变文件
+
+2d模式下在文件列表里切换文件时会调用该函数 \mbox{\Hypertarget{class_main_window_a595a96e877bbdd7cbdc638a5432396c2}\label{class_main_window_a595a96e877bbdd7cbdc638a5432396c2}} 
+\index{MainWindow@{MainWindow}!changeoutputdir@{changeoutputdir}}
+\index{changeoutputdir@{changeoutputdir}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changeoutputdir()}{changeoutputdir()}}
+{\footnotesize\ttfamily void Main\+Window\+::changeoutputdir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+切换输出文件夹 
+
+\mbox{\Hypertarget{class_main_window_aecf2bdecbb8a321e40b47c50ab176c6a}\label{class_main_window_aecf2bdecbb8a321e40b47c50ab176c6a}} 
+\index{MainWindow@{MainWindow}!changeState@{changeState}}
+\index{changeState@{changeState}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Main\+Window\+::change\+State (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+改变状态槽函数 
+
+改变主窗口状态 \mbox{\Hypertarget{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}\label{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}} 
+\index{MainWindow@{MainWindow}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+关闭事件重写 
+
+关闭事件 \mbox{\Hypertarget{class_main_window_a5b2944ddd0e28276113fd614e132a88b}\label{class_main_window_a5b2944ddd0e28276113fd614e132a88b}} 
+\index{MainWindow@{MainWindow}!closefile@{closefile}}
+\index{closefile@{closefile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{closefile()}{closefile()}}
+{\footnotesize\ttfamily void Main\+Window\+::closefile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+关闭文件 
+
+\mbox{\Hypertarget{class_main_window_a6aaf0f81d01b3cfc77f811e1015c2327}\label{class_main_window_a6aaf0f81d01b3cfc77f811e1015c2327}} 
+\index{MainWindow@{MainWindow}!createbrush@{createbrush}}
+\index{createbrush@{createbrush}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createbrush()}{createbrush()}}
+{\footnotesize\ttfamily void Main\+Window\+::createbrush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建画刷（分割标注） 
+
+创建画刷，分割标注 \mbox{\Hypertarget{class_main_window_a44713cf7515ee1ceb216060d98bde253}\label{class_main_window_a44713cf7515ee1ceb216060d98bde253}} 
+\index{MainWindow@{MainWindow}!createcircle@{createcircle}}
+\index{createcircle@{createcircle}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createcircle()}{createcircle()}}
+{\footnotesize\ttfamily void Main\+Window\+::createcircle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建圆 
+
+创建圆形 \mbox{\Hypertarget{class_main_window_a3405f719f17c182bbc11867d776cf01a}\label{class_main_window_a3405f719f17c182bbc11867d776cf01a}} 
+\index{MainWindow@{MainWindow}!createcurve@{createcurve}}
+\index{createcurve@{createcurve}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createcurve()}{createcurve()}}
+{\footnotesize\ttfamily void Main\+Window\+::createcurve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建平滑曲线 
+
+\mbox{\Hypertarget{class_main_window_a05d2ca7b947f34b82d3d78210c89f60a}\label{class_main_window_a05d2ca7b947f34b82d3d78210c89f60a}} 
+\index{MainWindow@{MainWindow}!createpolygons@{createpolygons}}
+\index{createpolygons@{createpolygons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createpolygons()}{createpolygons()}}
+{\footnotesize\ttfamily void Main\+Window\+::createpolygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建多边形 
+
+\mbox{\Hypertarget{class_main_window_a56a67453565aab9e608c634e9dc3af6f}\label{class_main_window_a56a67453565aab9e608c634e9dc3af6f}} 
+\index{MainWindow@{MainWindow}!createrectangle@{createrectangle}}
+\index{createrectangle@{createrectangle}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createrectangle()}{createrectangle()}}
+{\footnotesize\ttfamily void Main\+Window\+::createrectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建矩形 
+
+\mbox{\Hypertarget{class_main_window_a3f32adf1dadae7a96e314f88e5f36ffa}\label{class_main_window_a3f32adf1dadae7a96e314f88e5f36ffa}} 
+\index{MainWindow@{MainWindow}!deletefile@{deletefile}}
+\index{deletefile@{deletefile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{deletefile()}{deletefile()}}
+{\footnotesize\ttfamily void Main\+Window\+::deletefile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+删除文件 
+
+\mbox{\Hypertarget{class_main_window_a805c636328f942676fdb0ed68a236ee7}\label{class_main_window_a805c636328f942676fdb0ed68a236ee7}} 
+\index{MainWindow@{MainWindow}!deletepolygons@{deletepolygons}}
+\index{deletepolygons@{deletepolygons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{deletepolygons()}{deletepolygons()}}
+{\footnotesize\ttfamily void Main\+Window\+::deletepolygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+删除标注 
+
+\mbox{\Hypertarget{class_main_window_a2cba9e6d37b415431fc555b61cf20b37}\label{class_main_window_a2cba9e6d37b415431fc555b61cf20b37}} 
+\index{MainWindow@{MainWindow}!editbrush@{editbrush}}
+\index{editbrush@{editbrush}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{editbrush()}{editbrush()}}
+{\footnotesize\ttfamily void Main\+Window\+::editbrush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+编辑画刷大小 
+
+编辑画刷的大小 \mbox{\Hypertarget{class_main_window_ad32a8d2a3a00e8f96fd3d646fc569342}\label{class_main_window_ad32a8d2a3a00e8f96fd3d646fc569342}} 
+\index{MainWindow@{MainWindow}!editcolor@{editcolor}}
+\index{editcolor@{editcolor}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{editcolor()}{editcolor()}}
+{\footnotesize\ttfamily void Main\+Window\+::editcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+编辑颜色 
+
+编辑标注颜色 \mbox{\Hypertarget{class_main_window_af418944995a77d318baabd964542c629}\label{class_main_window_af418944995a77d318baabd964542c629}} 
+\index{MainWindow@{MainWindow}!editlabel@{editlabel}}
+\index{editlabel@{editlabel}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{editlabel()}{editlabel()}}
+{\footnotesize\ttfamily void Main\+Window\+::editlabel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+编辑标注标签文字 
+
+编辑标注文字 \mbox{\Hypertarget{class_main_window_a5249744ca4dc13578dc56424dbb55597}\label{class_main_window_a5249744ca4dc13578dc56424dbb55597}} 
+\index{MainWindow@{MainWindow}!editpolygons@{editpolygons}}
+\index{editpolygons@{editpolygons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{editpolygons()}{editpolygons()}}
+{\footnotesize\ttfamily void Main\+Window\+::editpolygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+编辑标注形状 
+
+\mbox{\Hypertarget{class_main_window_a12148fe283e7375f72e19a3dafc0e1d7}\label{class_main_window_a12148fe283e7375f72e19a3dafc0e1d7}} 
+\index{MainWindow@{MainWindow}!filelist@{filelist}}
+\index{filelist@{filelist}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{filelist()}{filelist()}}
+{\footnotesize\ttfamily void Main\+Window\+::filelist (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+文件列表组件是否显示 
+
+是否显示文件列表组件 \mbox{\Hypertarget{class_main_window_ab621156b962f31cedbbf839da1dcacdb}\label{class_main_window_ab621156b962f31cedbbf839da1dcacdb}} 
+\index{MainWindow@{MainWindow}!fileNameChanged@{fileNameChanged}}
+\index{fileNameChanged@{fileNameChanged}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{fileNameChanged}{fileNameChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::file\+Name\+Changed (\begin{DoxyParamCaption}\item[{Q\+String}]{file\+Name,  }\item[{Q\+String}]{labelfile\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+文件改变信号 
+
+\mbox{\Hypertarget{class_main_window_a89ab5504edc224d225ce0c074b745bf5}\label{class_main_window_a89ab5504edc224d225ce0c074b745bf5}} 
+\index{MainWindow@{MainWindow}!fitwindow@{fitwindow}}
+\index{fitwindow@{fitwindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{fitwindow()}{fitwindow()}}
+{\footnotesize\ttfamily void Main\+Window\+::fitwindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+宽度适应中心组件宽度 
+
+宽度适应窗口 \mbox{\Hypertarget{class_main_window_a81141da70295bb92ecfaae43f1669676}\label{class_main_window_a81141da70295bb92ecfaae43f1669676}} 
+\index{MainWindow@{MainWindow}!hidepolygons@{hidepolygons}}
+\index{hidepolygons@{hidepolygons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{hidepolygons()}{hidepolygons()}}
+{\footnotesize\ttfamily void Main\+Window\+::hidepolygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+隐藏标注形状 
+
+隐藏标注 \mbox{\Hypertarget{class_main_window_af0851068663242947f0af3e208eeb2a5}\label{class_main_window_af0851068663242947f0af3e208eeb2a5}} 
+\index{MainWindow@{MainWindow}!import@{import}}
+\index{import@{import}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{import()}{import()}}
+{\footnotesize\ttfamily void Main\+Window\+::import (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+导入标注文件 
+
+\mbox{\Hypertarget{class_main_window_a9c4f542263838b9ecd06eae839a42a34}\label{class_main_window_a9c4f542263838b9ecd06eae839a42a34}} 
+\index{MainWindow@{MainWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Key\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+按键控制 
+
+处理按键事件 \mbox{\Hypertarget{class_main_window_ad98fb35ce37a6bd2ef921530fa73a8ed}\label{class_main_window_ad98fb35ce37a6bd2ef921530fa73a8ed}} 
+\index{MainWindow@{MainWindow}!magnifier@{magnifier}}
+\index{magnifier@{magnifier}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{magnifier()}{magnifier()}}
+{\footnotesize\ttfamily void Main\+Window\+::magnifier (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+是否开启放大镜 
+
+放大镜功能 \mbox{\Hypertarget{class_main_window_a45344abf30a71e5508c2b420f7547fc5}\label{class_main_window_a45344abf30a71e5508c2b420f7547fc5}} 
+\index{MainWindow@{MainWindow}!nextimage@{nextimage}}
+\index{nextimage@{nextimage}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{nextimage()}{nextimage()}}
+{\footnotesize\ttfamily void Main\+Window\+::nextimage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+下一张图片 
+
+2d模式下由文件列表组件进行切换 3d模式下由中心组件进行切换 \mbox{\Hypertarget{class_main_window_a496f65558e80a834fb03be884f532086}\label{class_main_window_a496f65558e80a834fb03be884f532086}} 
+\index{MainWindow@{MainWindow}!opendir@{opendir}}
+\index{opendir@{opendir}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{opendir()}{opendir()}}
+{\footnotesize\ttfamily void Main\+Window\+::opendir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+打开文件夹 
+
+\mbox{\Hypertarget{class_main_window_a8349b9b372605b330eb8957d232f8ef6}\label{class_main_window_a8349b9b372605b330eb8957d232f8ef6}} 
+\index{MainWindow@{MainWindow}!openfile@{openfile}}
+\index{openfile@{openfile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{openfile()}{openfile()}}
+{\footnotesize\ttfamily void Main\+Window\+::openfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+打开文件 
+
+打开文件命令 \mbox{\Hypertarget{class_main_window_a62847c89c7f841c4bd0a0b93e590233d}\label{class_main_window_a62847c89c7f841c4bd0a0b93e590233d}} 
+\index{MainWindow@{MainWindow}!originalsize@{originalsize}}
+\index{originalsize@{originalsize}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{originalsize()}{originalsize()}}
+{\footnotesize\ttfamily void Main\+Window\+::originalsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+恢复原始大小 
+
+原始大小 \mbox{\Hypertarget{class_main_window_a9a2598a8a8e02c101354f7cdedcf8573}\label{class_main_window_a9a2598a8a8e02c101354f7cdedcf8573}} 
+\index{MainWindow@{MainWindow}!polygonlabels@{polygonlabels}}
+\index{polygonlabels@{polygonlabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{polygonlabels()}{polygonlabels()}}
+{\footnotesize\ttfamily void Main\+Window\+::polygonlabels (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+标签列表组件是否显示 
+
+是否显示标签列表组件 \mbox{\Hypertarget{class_main_window_aae137b33ae9c7e9123424771c7d4cd43}\label{class_main_window_aae137b33ae9c7e9123424771c7d4cd43}} 
+\index{MainWindow@{MainWindow}!previmage@{previmage}}
+\index{previmage@{previmage}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{previmage()}{previmage()}}
+{\footnotesize\ttfamily void Main\+Window\+::previmage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+上一张图片 
+
+上一张图片 /// 2d模式下由文件列表组件进行切换 3d模式下由中心组件进行切换 \mbox{\Hypertarget{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}\label{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}} 
+\index{MainWindow@{MainWindow}!quit@{quit}}
+\index{quit@{quit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Main\+Window\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+退出程序 
+
+\mbox{\Hypertarget{class_main_window_a21b622c0f1855274d69f32421f10b251}\label{class_main_window_a21b622c0f1855274d69f32421f10b251}} 
+\index{MainWindow@{MainWindow}!redo@{redo}}
+\index{redo@{redo}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{redo()}{redo()}}
+{\footnotesize\ttfamily void Main\+Window\+::redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+重做 
+
+重做动作 \mbox{\Hypertarget{class_main_window_a3ba1a371fb10e731ae0926ae85efeb4f}\label{class_main_window_a3ba1a371fb10e731ae0926ae85efeb4f}} 
+\index{MainWindow@{MainWindow}!save@{save}}
+\index{save@{save}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Main\+Window\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+保存文件 
+
+\mbox{\Hypertarget{class_main_window_a20f32cb1548a1c88818ed58cc940b229}\label{class_main_window_a20f32cb1548a1c88818ed58cc940b229}} 
+\index{MainWindow@{MainWindow}!saveas@{saveas}}
+\index{saveas@{saveas}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{saveas()}{saveas()}}
+{\footnotesize\ttfamily void Main\+Window\+::saveas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+另存文件 
+
+\mbox{\Hypertarget{class_main_window_aec735826a19e059ff2bfec8ad3e7475f}\label{class_main_window_aec735826a19e059ff2bfec8ad3e7475f}} 
+\index{MainWindow@{MainWindow}!saveautomatically@{saveautomatically}}
+\index{saveautomatically@{saveautomatically}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{saveautomatically()}{saveautomatically()}}
+{\footnotesize\ttfamily void Main\+Window\+::saveautomatically (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+自动保存 
+
+\mbox{\Hypertarget{class_main_window_a0ac76460316e7c2cb51296e5e2c4a741}\label{class_main_window_a0ac76460316e7c2cb51296e5e2c4a741}} 
+\index{MainWindow@{MainWindow}!showpolygons@{showpolygons}}
+\index{showpolygons@{showpolygons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showpolygons()}{showpolygons()}}
+{\footnotesize\ttfamily void Main\+Window\+::showpolygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+显示标注形状 
+
+显示标注 \mbox{\Hypertarget{class_main_window_a601d9e90682b66c51fe1746b03ee0623}\label{class_main_window_a601d9e90682b66c51fe1746b03ee0623}} 
+\index{MainWindow@{MainWindow}!statusInit@{statusInit}}
+\index{statusInit@{statusInit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{statusInit}{statusInit}}
+{\footnotesize\ttfamily void Main\+Window\+::status\+Init (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+状态初始化信号 
+
+\mbox{\Hypertarget{class_main_window_a0c25eed4db1ba6708a1796b321dcd90b}\label{class_main_window_a0c25eed4db1ba6708a1796b321dcd90b}} 
+\index{MainWindow@{MainWindow}!toggle3d@{toggle3d}}
+\index{toggle3d@{toggle3d}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{toggle3d()}{toggle3d()}}
+{\footnotesize\ttfamily void Main\+Window\+::toggle3d (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+切换3d模式 
+
+切换为3d模式 \mbox{\Hypertarget{class_main_window_a7ed53c4e1d2bf9321ed5df917b55d40a}\label{class_main_window_a7ed53c4e1d2bf9321ed5df917b55d40a}} 
+\index{MainWindow@{MainWindow}!undo@{undo}}
+\index{undo@{undo}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily void Main\+Window\+::undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+撤销 
+
+撤销动作 \mbox{\Hypertarget{class_main_window_ab9a7c10faf0add18b59501931d1f80a5}\label{class_main_window_ab9a7c10faf0add18b59501931d1f80a5}} 
+\index{MainWindow@{MainWindow}!undolastpoint@{undolastpoint}}
+\index{undolastpoint@{undolastpoint}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{undolastpoint()}{undolastpoint()}}
+{\footnotesize\ttfamily void Main\+Window\+::undolastpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+撤销正在创建的标注形状 
+
+撤销正在绘制的标注 \mbox{\Hypertarget{class_main_window_a571790691bad25c9861c0c487ba0ce43}\label{class_main_window_a571790691bad25c9861c0c487ba0ce43}} 
+\index{MainWindow@{MainWindow}!zoomin@{zoomin}}
+\index{zoomin@{zoomin}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{zoomin()}{zoomin()}}
+{\footnotesize\ttfamily void Main\+Window\+::zoomin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+放大 
+
+放大图片 \mbox{\Hypertarget{class_main_window_ac54938e78f6b39c6b62cee61d75e8c22}\label{class_main_window_ac54938e78f6b39c6b62cee61d75e8c22}} 
+\index{MainWindow@{MainWindow}!zoomout@{zoomout}}
+\index{zoomout@{zoomout}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{zoomout()}{zoomout()}}
+{\footnotesize\ttfamily void Main\+Window\+::zoomout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+缩小 
+
+缩小图片 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_window_ab64a47db45f9d79411a5cf6d9e69ff7d}\label{class_main_window_ab64a47db45f9d79411a5cf6d9e69ff7d}} 
+\index{MainWindow@{MainWindow}!actionsinit@{actionsinit}}
+\index{actionsinit@{actionsinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{actionsinit}{actionsinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_actions_init}{Actions\+Init}}$\ast$ Main\+Window\+::actionsinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+动作管理组件 
+
+\mbox{\Hypertarget{class_main_window_ab55d7652d951de7df28bd8b9458ee13d}\label{class_main_window_ab55d7652d951de7df28bd8b9458ee13d}} 
+\index{MainWindow@{MainWindow}!centralwidget@{centralwidget}}
+\index{centralwidget@{centralwidget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{centralwidget}{centralwidget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_1_1_central_widget}{My\+::\+Central\+Widget}}$\ast$ Main\+Window\+::centralwidget\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+中心组件 
+
+\mbox{\Hypertarget{class_main_window_a2a44e56395cf02b851e9600fe8c2ff2a}\label{class_main_window_a2a44e56395cf02b851e9600fe8c2ff2a}} 
+\index{MainWindow@{MainWindow}!centralwidget2d@{centralwidget2d}}
+\index{centralwidget2d@{centralwidget2d}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{centralwidget2d}{centralwidget2d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}}$\ast$ Main\+Window\+::centralwidget2d\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+2d中心组件 
+
+\mbox{\Hypertarget{class_main_window_a7875165d5dfc54fd458c607605389888}\label{class_main_window_a7875165d5dfc54fd458c607605389888}} 
+\index{MainWindow@{MainWindow}!centralwidget3d@{centralwidget3d}}
+\index{centralwidget3d@{centralwidget3d}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{centralwidget3d}{centralwidget3d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}}$\ast$ Main\+Window\+::centralwidget3d\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+3d中心组件 
+
+\mbox{\Hypertarget{class_main_window_a187cb4c31b68a9c1cafbd0a13534f7bb}\label{class_main_window_a187cb4c31b68a9c1cafbd0a13534f7bb}} 
+\index{MainWindow@{MainWindow}!dirName@{dirName}}
+\index{dirName@{dirName}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{dirName}{dirName}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::dir\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+目录名 
+
+\mbox{\Hypertarget{class_main_window_a06968aebc42a16ab51c5888b4784075d}\label{class_main_window_a06968aebc42a16ab51c5888b4784075d}} 
+\index{MainWindow@{MainWindow}!fileName@{fileName}}
+\index{fileName@{fileName}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{fileName}{fileName}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::file\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+文件名 
+
+\mbox{\Hypertarget{class_main_window_a7cb6d4ab199b36eaf9afa86f6faf273b}\label{class_main_window_a7cb6d4ab199b36eaf9afa86f6faf273b}} 
+\index{MainWindow@{MainWindow}!filesinit@{filesinit}}
+\index{filesinit@{filesinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{filesinit}{filesinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_files_d_w_init}{Files\+D\+W\+Init}}$\ast$ Main\+Window\+::filesinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+文件列表管理组件 
+
+\mbox{\Hypertarget{class_main_window_a9e9f41ce5192be5271d6e05c207d1366}\label{class_main_window_a9e9f41ce5192be5271d6e05c207d1366}} 
+\index{MainWindow@{MainWindow}!labelsinit@{labelsinit}}
+\index{labelsinit@{labelsinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{labelsinit}{labelsinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_labels_d_w_init}{Labels\+D\+W\+Init}}$\ast$ Main\+Window\+::labelsinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+标签列表管理组件 
+
+\mbox{\Hypertarget{class_main_window_ab750f3c7e19f38bb68cedc3b1688cc6b}\label{class_main_window_ab750f3c7e19f38bb68cedc3b1688cc6b}} 
+\index{MainWindow@{MainWindow}!mbarinit@{mbarinit}}
+\index{mbarinit@{mbarinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{mbarinit}{mbarinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menubar_init}{Menubar\+Init}}$\ast$ Main\+Window\+::mbarinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+菜单栏管理组件 
+
+\mbox{\Hypertarget{class_main_window_ac553f8a1acb8a115227b1c9b5d77b488}\label{class_main_window_ac553f8a1acb8a115227b1c9b5d77b488}} 
+\index{MainWindow@{MainWindow}!mode@{mode}}
+\index{mode@{mode}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2}{My\+::\+Mode}} Main\+Window\+::mode =\mbox{\hyperlink{namespace_my_ad494d4dba7b4ec4b38aa9e25b5dd5ea2aa4de0fc276db8e8e6fc5a9e14eeb3e59}{My\+::\+TwoD}}}
+
+
+
+模式变量 
+
+Two\+D代表2d模式，\+Three\+D代表3d模式 \mbox{\Hypertarget{class_main_window_a111aea8cebf124ea9ef5efb9e7149651}\label{class_main_window_a111aea8cebf124ea9ef5efb9e7149651}} 
+\index{MainWindow@{MainWindow}!sbarinit@{sbarinit}}
+\index{sbarinit@{sbarinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sbarinit}{sbarinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statusbar_init}{Statusbar\+Init}}$\ast$ Main\+Window\+::sbarinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+状态栏管理组件 
+
+\mbox{\Hypertarget{class_main_window_a31d095f6a1c4251b0266a6b066f0db0b}\label{class_main_window_a31d095f6a1c4251b0266a6b066f0db0b}} 
+\index{MainWindow@{MainWindow}!status@{status}}
+\index{status@{status}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_my_a8551dfb3a8ad3869b3974e9d4d1f105a}{My\+::\+Status}} Main\+Window\+::status =My\+::\+Status\+::\+Edit}
+
+
+
+主窗口状态变量 
+
+默认为\+Edit状态，\+Focus状态代表有标注形状被选中状态，\+Create状态代表正在创建标注形状状态 \mbox{\Hypertarget{class_main_window_a78c416fa8828af73483e3f4f1094b778}\label{class_main_window_a78c416fa8828af73483e3f4f1094b778}} 
+\index{MainWindow@{MainWindow}!tbarinit@{tbarinit}}
+\index{tbarinit@{tbarinit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tbarinit}{tbarinit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_toolbar_init}{Toolbar\+Init}}$\ast$ Main\+Window\+::tbarinit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+工具栏管理组件 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+src/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

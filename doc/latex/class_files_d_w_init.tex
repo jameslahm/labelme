@@ -1,0 +1,149 @@
+\hypertarget{class_files_d_w_init}{}\doxysection{Files\+D\+W\+Init Class Reference}
+\label{class_files_d_w_init}\index{FilesDWInit@{FilesDWInit}}
+
+
+负责文件列表组件的初始化及状态管理  
+
+
+
+
+{\ttfamily \#include $<$Files\+D\+W\+Init.\+h$>$}
+
+Inheritance diagram for Files\+D\+W\+Init\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_files_d_w_init}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_files_d_w_init_ac7f41f109656a9eeb79834a3a4d83fb8}{Files\+D\+W\+Init}} (Q\+Widget $\ast$parent)
+\item 
+void \mbox{\hyperlink{class_files_d_w_init_a06856c178c15f1b899a870587a053098}{set\+Up}} (Q\+Main\+Window $\ast$w)
+\begin{DoxyCompactList}\small\item\em 界面初始化函数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_files_d_w_init_a2ca6655c2aa6416d5ca0d85a2594d905}{open\+File}} (Q\+String \&file\+Name, Q\+String \&dir\+Name)
+\begin{DoxyCompactList}\small\item\em 打开文件功能 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_files_d_w_init_aa9ac2f45b8f2df354a1d4ff71ae26b0f}{open\+Dir}} (Q\+String \&file\+Name, Q\+String \&dir\+Name)
+\begin{DoxyCompactList}\small\item\em 打开文件夹功能 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_files_d_w_init_a0583d28acd0747a7b1b3ea876c2a9ade}{change\+State}} (Q\+List\+Widget\+Item $\ast$previous)
+\begin{DoxyCompactList}\small\item\em 切换item的checkstate状态，保证同一时刻只有一个被勾选 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_files_d_w_init_a18d4355ed9480514b886c0dbaf21b629}{next\+Image}} (Q\+String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em 下一张图片 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_files_d_w_init_a5e19a14859f1f3e121c1a504259840b8}{prev\+Image}} (Q\+String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em 上一张图片 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Dock\+Widget $\ast$ \mbox{\hyperlink{class_files_d_w_init_a3984d481438151e3a3dcc66a052728c0}{dw\+Files}}
+\begin{DoxyCompactList}\small\item\em 浮动窗口，用来显示文件列表 \end{DoxyCompactList}\item 
+Q\+List\+Widget $\ast$ \mbox{\hyperlink{class_files_d_w_init_a6a6f774647278006e1fdea1ffde6adc1}{lw}}
+\begin{DoxyCompactList}\small\item\em 显示文件列表的组件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+负责文件列表组件的初始化及状态管理 
+
+负责文件列表浮动窗口组件的界面初始化， 以及后续的文件列表的管理。 与文件相关的动作比如打开文件、打开文件夹等均由\+Main\+Window进行消息传递转发到此处进行处理。 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_files_d_w_init_ac7f41f109656a9eeb79834a3a4d83fb8}\label{class_files_d_w_init_ac7f41f109656a9eeb79834a3a4d83fb8}} 
+\index{FilesDWInit@{FilesDWInit}!FilesDWInit@{FilesDWInit}}
+\index{FilesDWInit@{FilesDWInit}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{FilesDWInit()}{FilesDWInit()}}
+{\footnotesize\ttfamily Files\+D\+W\+Init\+::\+Files\+D\+W\+Init (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_files_d_w_init_a0583d28acd0747a7b1b3ea876c2a9ade}\label{class_files_d_w_init_a0583d28acd0747a7b1b3ea876c2a9ade}} 
+\index{FilesDWInit@{FilesDWInit}!changeState@{changeState}}
+\index{changeState@{changeState}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Files\+D\+W\+Init\+::change\+State (\begin{DoxyParamCaption}\item[{Q\+List\+Widget\+Item $\ast$}]{previous }\end{DoxyParamCaption})}
+
+
+
+切换item的checkstate状态，保证同一时刻只有一个被勾选 
+
+改变item的checkstate状态
+
+保证只有一个item为checked，后续可扩展开发 \mbox{\Hypertarget{class_files_d_w_init_a18d4355ed9480514b886c0dbaf21b629}\label{class_files_d_w_init_a18d4355ed9480514b886c0dbaf21b629}} 
+\index{FilesDWInit@{FilesDWInit}!nextImage@{nextImage}}
+\index{nextImage@{nextImage}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{nextImage()}{nextImage()}}
+{\footnotesize\ttfamily void Files\+D\+W\+Init\+::next\+Image (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+下一张图片 
+
+\mbox{\Hypertarget{class_files_d_w_init_aa9ac2f45b8f2df354a1d4ff71ae26b0f}\label{class_files_d_w_init_aa9ac2f45b8f2df354a1d4ff71ae26b0f}} 
+\index{FilesDWInit@{FilesDWInit}!openDir@{openDir}}
+\index{openDir@{openDir}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{openDir()}{openDir()}}
+{\footnotesize\ttfamily bool Files\+D\+W\+Init\+::open\+Dir (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name,  }\item[{Q\+String \&}]{dir\+Name }\end{DoxyParamCaption})}
+
+
+
+打开文件夹功能 
+
+打开文件夹 \mbox{\Hypertarget{class_files_d_w_init_a2ca6655c2aa6416d5ca0d85a2594d905}\label{class_files_d_w_init_a2ca6655c2aa6416d5ca0d85a2594d905}} 
+\index{FilesDWInit@{FilesDWInit}!openFile@{openFile}}
+\index{openFile@{openFile}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily bool Files\+D\+W\+Init\+::open\+File (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name,  }\item[{Q\+String \&}]{dir\+Name }\end{DoxyParamCaption})}
+
+
+
+打开文件功能 
+
+打开文件 \mbox{\Hypertarget{class_files_d_w_init_a5e19a14859f1f3e121c1a504259840b8}\label{class_files_d_w_init_a5e19a14859f1f3e121c1a504259840b8}} 
+\index{FilesDWInit@{FilesDWInit}!prevImage@{prevImage}}
+\index{prevImage@{prevImage}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{prevImage()}{prevImage()}}
+{\footnotesize\ttfamily void Files\+D\+W\+Init\+::prev\+Image (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+上一张图片 
+
+\mbox{\Hypertarget{class_files_d_w_init_a06856c178c15f1b899a870587a053098}\label{class_files_d_w_init_a06856c178c15f1b899a870587a053098}} 
+\index{FilesDWInit@{FilesDWInit}!setUp@{setUp}}
+\index{setUp@{setUp}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void Files\+D\+W\+Init\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Main\+Window $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+界面初始化函数 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_files_d_w_init_a3984d481438151e3a3dcc66a052728c0}\label{class_files_d_w_init_a3984d481438151e3a3dcc66a052728c0}} 
+\index{FilesDWInit@{FilesDWInit}!dwFiles@{dwFiles}}
+\index{dwFiles@{dwFiles}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{dwFiles}{dwFiles}}
+{\footnotesize\ttfamily Q\+Dock\+Widget$\ast$ Files\+D\+W\+Init\+::dw\+Files}
+
+
+
+浮动窗口，用来显示文件列表 
+
+\mbox{\Hypertarget{class_files_d_w_init_a6a6f774647278006e1fdea1ffde6adc1}\label{class_files_d_w_init_a6a6f774647278006e1fdea1ffde6adc1}} 
+\index{FilesDWInit@{FilesDWInit}!lw@{lw}}
+\index{lw@{lw}!FilesDWInit@{FilesDWInit}}
+\doxysubsubsection{\texorpdfstring{lw}{lw}}
+{\footnotesize\ttfamily Q\+List\+Widget$\ast$ Files\+D\+W\+Init\+::lw}
+
+
+
+显示文件列表的组件 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_files_d_w_init_8h}{Files\+D\+W\+Init.\+h}}\item 
+src/\mbox{\hyperlink{filesdwinit_8cpp}{filesdwinit.\+cpp}}\end{DoxyCompactItemize}

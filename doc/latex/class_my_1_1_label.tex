@@ -1,0 +1,282 @@
+\hypertarget{class_my_1_1_label}{}\doxysection{My\+::Label Class Reference}
+\label{class_my_1_1_label}\index{My::Label@{My::Label}}
+
+
+2d绘制图片及标注类，继承\+Q\+Label  
+
+
+
+
+{\ttfamily \#include $<$Label.\+h$>$}
+
+Inheritance diagram for My\+::Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_1_1_label}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_label_a9f3c604ff49d15680d833839a664e4c6}{Label}} (Q\+Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label_a5228fd67bf493a1f78ba413c2233978b}{paint\+Event}} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label_ae47fd4f6f92c052860b2016d66b9a237}{mouse\+Press\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写鼠标移动事件的处理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label_ad5a14a3cabf92db791afb5c3d86a062a}{mouse\+Move\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写鼠标移动事件的处理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label_ab3b2867fef6dc213753c9b003011381d}{mouse\+Release\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写释放鼠标事件的处理 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_1_1_label_acad7c85d5a35a86a17dc96f23f1ae163}{$\sim$\+Label}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Color \mbox{\hyperlink{class_my_1_1_label_ab8181eb28f32aea7a306d0e07d1daac1}{color}}
+\begin{DoxyCompactList}\small\item\em 默认标注形状颜色 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_1_1_label_afd2f886f5a144a47e7adeb0df6cf997e}{current}} =-\/1
+\begin{DoxyCompactList}\small\item\em 默认-\/1，current表示当前操作的标注形状的索引 \end{DoxyCompactList}\item 
+Q\+Pixmap $\ast$ \mbox{\hyperlink{class_my_1_1_label_ae66629f030df1fd97334ec905774dad9}{pixmap}}
+\begin{DoxyCompactList}\small\item\em 中心图片 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label_af5e9b5f59cdf75bed34dcd249813c0ea}{size}} =float(0.\+01)
+\begin{DoxyCompactList}\small\item\em 默认标注形状大小 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label_ace84a2d2ffdbedbce913596048dc9c41}{zoom\+Level}} =1.\+0
+\begin{DoxyCompactList}\small\item\em 默认放大倍数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_label_a41b2ef51305809d0c417cf6027b25ba0}{Magni\+Fier}} =false
+\begin{DoxyCompactList}\small\item\em 是否开启放大镜 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}} $\ast$ \mbox{\hyperlink{class_my_1_1_label_a361aa7c5a258176ecc9899a58e71d458}{manager}}
+\begin{DoxyCompactList}\small\item\em 存放2d中心组件 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label_a5e078089872dec8b32adc68837be9c09}{X\+Offset\+Sum}} =0
+\begin{DoxyCompactList}\small\item\em 每次移动标注形状的总偏移量 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label_aeedcdc86bf47584a8bb972f29fdee032}{Y\+Offset\+Sum}} =0
+\begin{DoxyCompactList}\small\item\em 每次移动标注形状的总偏移量 \end{DoxyCompactList}\item 
+Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \mbox{\hyperlink{class_my_1_1_label_a1e57ca2b352c4b8c8f419785ff0d8977}{shapes}}
+\begin{DoxyCompactList}\small\item\em 标注形状列表 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}} \mbox{\hyperlink{class_my_1_1_label_a7d4c5e45d8a58efd0996cba625bc412d}{status}} =My\+::shape\+Status\+::\+No\+Shape
+\begin{DoxyCompactList}\small\item\em 标注状态，默认为noshape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_my_1_1_label_a1e64b6457ce09ca1bc76dbaeab55ba3b}{cursorX}} =0
+\begin{DoxyCompactList}\small\item\em 存储当前鼠标的坐标位置 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label_a97e9a53c66977253e8d4476e7941c284}{cursorY}} =0
+\begin{DoxyCompactList}\small\item\em 存储当前鼠标的坐标位置 \end{DoxyCompactList}\item 
+Q\+Pixmap \mbox{\hyperlink{class_my_1_1_label_a54f29fb7813f6edd81b71b6ab4e6a99e}{magnifier\+Area}}
+\begin{DoxyCompactList}\small\item\em 右下角放大区域图片 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+2d绘制图片及标注类，继承\+Q\+Label 
+
+内部具体的形状的绘制均交由\+Shape类进行处理， Shape类为形状基类， 具体的绘制则会调用对应形状类的虚函数。 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_label_a9f3c604ff49d15680d833839a664e4c6}\label{class_my_1_1_label_a9f3c604ff49d15680d833839a664e4c6}} 
+\index{My::Label@{My::Label}!Label@{Label}}
+\index{Label@{Label}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{Label()}{Label()}}
+{\footnotesize\ttfamily My\+::\+Label\+::\+Label (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+\mbox{\Hypertarget{class_my_1_1_label_acad7c85d5a35a86a17dc96f23f1ae163}\label{class_my_1_1_label_acad7c85d5a35a86a17dc96f23f1ae163}} 
+\index{My::Label@{My::Label}!````~Label@{$\sim$Label}}
+\index{````~Label@{$\sim$Label}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{$\sim$Label()}{~Label()}}
+{\footnotesize\ttfamily My\+::\+Label\+::$\sim$\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_label_ad5a14a3cabf92db791afb5c3d86a062a}\label{class_my_1_1_label_ad5a14a3cabf92db791afb5c3d86a062a}} 
+\index{My::Label@{My::Label}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写鼠标移动事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label_ae47fd4f6f92c052860b2016d66b9a237}\label{class_my_1_1_label_ae47fd4f6f92c052860b2016d66b9a237}} 
+\index{My::Label@{My::Label}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写鼠标移动事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label_ab3b2867fef6dc213753c9b003011381d}\label{class_my_1_1_label_ab3b2867fef6dc213753c9b003011381d}} 
+\index{My::Label@{My::Label}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写释放鼠标事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label_a5228fd67bf493a1f78ba413c2233978b}\label{class_my_1_1_label_a5228fd67bf493a1f78ba413c2233978b}} 
+\index{My::Label@{My::Label}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写 
+
+重写绘制事件的处理 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_label_ab8181eb28f32aea7a306d0e07d1daac1}\label{class_my_1_1_label_ab8181eb28f32aea7a306d0e07d1daac1}} 
+\index{My::Label@{My::Label}!color@{color}}
+\index{color@{color}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Q\+Color My\+::\+Label\+::color}
+
+
+
+默认标注形状颜色 
+
+\mbox{\Hypertarget{class_my_1_1_label_afd2f886f5a144a47e7adeb0df6cf997e}\label{class_my_1_1_label_afd2f886f5a144a47e7adeb0df6cf997e}} 
+\index{My::Label@{My::Label}!current@{current}}
+\index{current@{current}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily int My\+::\+Label\+::current =-\/1}
+
+
+
+默认-\/1，current表示当前操作的标注形状的索引 
+
+\mbox{\Hypertarget{class_my_1_1_label_a1e64b6457ce09ca1bc76dbaeab55ba3b}\label{class_my_1_1_label_a1e64b6457ce09ca1bc76dbaeab55ba3b}} 
+\index{My::Label@{My::Label}!cursorX@{cursorX}}
+\index{cursorX@{cursorX}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{cursorX}{cursorX}}
+{\footnotesize\ttfamily float My\+::\+Label\+::cursorX =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+存储当前鼠标的坐标位置 
+
+\mbox{\Hypertarget{class_my_1_1_label_a97e9a53c66977253e8d4476e7941c284}\label{class_my_1_1_label_a97e9a53c66977253e8d4476e7941c284}} 
+\index{My::Label@{My::Label}!cursorY@{cursorY}}
+\index{cursorY@{cursorY}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{cursorY}{cursorY}}
+{\footnotesize\ttfamily float My\+::\+Label\+::cursorY =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+存储当前鼠标的坐标位置 
+
+\mbox{\Hypertarget{class_my_1_1_label_a41b2ef51305809d0c417cf6027b25ba0}\label{class_my_1_1_label_a41b2ef51305809d0c417cf6027b25ba0}} 
+\index{My::Label@{My::Label}!MagniFier@{MagniFier}}
+\index{MagniFier@{MagniFier}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{MagniFier}{MagniFier}}
+{\footnotesize\ttfamily bool My\+::\+Label\+::\+Magni\+Fier =false}
+
+
+
+是否开启放大镜 
+
+\mbox{\Hypertarget{class_my_1_1_label_a54f29fb7813f6edd81b71b6ab4e6a99e}\label{class_my_1_1_label_a54f29fb7813f6edd81b71b6ab4e6a99e}} 
+\index{My::Label@{My::Label}!magnifierArea@{magnifierArea}}
+\index{magnifierArea@{magnifierArea}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{magnifierArea}{magnifierArea}}
+{\footnotesize\ttfamily Q\+Pixmap My\+::\+Label\+::magnifier\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+右下角放大区域图片 
+
+\mbox{\Hypertarget{class_my_1_1_label_a361aa7c5a258176ecc9899a58e71d458}\label{class_my_1_1_label_a361aa7c5a258176ecc9899a58e71d458}} 
+\index{My::Label@{My::Label}!manager@{manager}}
+\index{manager@{manager}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init2_d}{Central\+W\+Init2D}}$\ast$ My\+::\+Label\+::manager}
+
+
+
+存放2d中心组件 
+
+\mbox{\Hypertarget{class_my_1_1_label_ae66629f030df1fd97334ec905774dad9}\label{class_my_1_1_label_ae66629f030df1fd97334ec905774dad9}} 
+\index{My::Label@{My::Label}!pixmap@{pixmap}}
+\index{pixmap@{pixmap}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{pixmap}{pixmap}}
+{\footnotesize\ttfamily Q\+Pixmap$\ast$ My\+::\+Label\+::pixmap}
+
+
+
+中心图片 
+
+\mbox{\Hypertarget{class_my_1_1_label_a1e57ca2b352c4b8c8f419785ff0d8977}\label{class_my_1_1_label_a1e57ca2b352c4b8c8f419785ff0d8977}} 
+\index{My::Label@{My::Label}!shapes@{shapes}}
+\index{shapes@{shapes}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{shapes}{shapes}}
+{\footnotesize\ttfamily Q\+List$<$\mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}}$\ast$$>$ My\+::\+Label\+::shapes}
+
+
+
+标注形状列表 
+
+\mbox{\Hypertarget{class_my_1_1_label_af5e9b5f59cdf75bed34dcd249813c0ea}\label{class_my_1_1_label_af5e9b5f59cdf75bed34dcd249813c0ea}} 
+\index{My::Label@{My::Label}!size@{size}}
+\index{size@{size}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily float My\+::\+Label\+::size =float(0.\+01)}
+
+
+
+默认标注形状大小 
+
+\mbox{\Hypertarget{class_my_1_1_label_a7d4c5e45d8a58efd0996cba625bc412d}\label{class_my_1_1_label_a7d4c5e45d8a58efd0996cba625bc412d}} 
+\index{My::Label@{My::Label}!status@{status}}
+\index{status@{status}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}} My\+::\+Label\+::status =My\+::shape\+Status\+::\+No\+Shape}
+
+
+
+标注状态，默认为noshape 
+
+\mbox{\Hypertarget{class_my_1_1_label_a5e078089872dec8b32adc68837be9c09}\label{class_my_1_1_label_a5e078089872dec8b32adc68837be9c09}} 
+\index{My::Label@{My::Label}!XOffsetSum@{XOffsetSum}}
+\index{XOffsetSum@{XOffsetSum}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{XOffsetSum}{XOffsetSum}}
+{\footnotesize\ttfamily float My\+::\+Label\+::\+X\+Offset\+Sum =0}
+
+
+
+每次移动标注形状的总偏移量 
+
+\mbox{\Hypertarget{class_my_1_1_label_aeedcdc86bf47584a8bb972f29fdee032}\label{class_my_1_1_label_aeedcdc86bf47584a8bb972f29fdee032}} 
+\index{My::Label@{My::Label}!YOffsetSum@{YOffsetSum}}
+\index{YOffsetSum@{YOffsetSum}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{YOffsetSum}{YOffsetSum}}
+{\footnotesize\ttfamily float My\+::\+Label\+::\+Y\+Offset\+Sum =0}
+
+
+
+每次移动标注形状的总偏移量 
+
+\mbox{\Hypertarget{class_my_1_1_label_ace84a2d2ffdbedbce913596048dc9c41}\label{class_my_1_1_label_ace84a2d2ffdbedbce913596048dc9c41}} 
+\index{My::Label@{My::Label}!zoomLevel@{zoomLevel}}
+\index{zoomLevel@{zoomLevel}!My::Label@{My::Label}}
+\doxysubsubsection{\texorpdfstring{zoomLevel}{zoomLevel}}
+{\footnotesize\ttfamily float My\+::\+Label\+::zoom\+Level =1.\+0}
+
+
+
+默认放大倍数 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_label_8h}{Label.\+h}}\item 
+src/\mbox{\hyperlink{label_8cpp}{label.\+cpp}}\end{DoxyCompactItemize}

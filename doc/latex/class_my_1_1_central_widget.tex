@@ -1,0 +1,420 @@
+\hypertarget{class_my_1_1_central_widget}{}\doxysection{My\+::Central\+Widget Class Reference}
+\label{class_my_1_1_central_widget}\index{My::CentralWidget@{My::CentralWidget}}
+
+
+中心组件基类  
+
+
+
+
+{\ttfamily \#include $<$Central\+Widget.\+h$>$}
+
+Inheritance diagram for My\+::Central\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_my_1_1_central_widget}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_my_1_1_central_widget_aef71c825c600fd3c16b79dff04c4d2c1}{selected\+Changed}} (int index, bool b)
+\begin{DoxyCompactList}\small\item\em 标注选中状态改变信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_central_widget_ae1006c8f16322879377a02144d8532d6}{label\+Deleted}} (int index)
+\begin{DoxyCompactList}\small\item\em 标注删除信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_central_widget_aff98532757ed466c873684ee8438783d}{labels\+Finished}} (Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$ $>$ \&shapes)
+\begin{DoxyCompactList}\small\item\em 标注解析完毕信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_central_widget_aa92f542f952111c2f588f39d1f176e38}{label\+Added}} (\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$shape, int index)
+\begin{DoxyCompactList}\small\item\em 标注添加信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_central_widget_a4d9264a39f2364a834aecd1b87d4157a}{label\+Changed}} (int index, \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$shape)
+\begin{DoxyCompactList}\small\item\em 标注改变信号 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_central_widget_aa2a319c209912e3fdebc6987071bd08c}{Central\+Widget}} (Q\+Widget $\ast$parent)
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a55ba105612c69e44406071887c52429b}{set\+Up}} (Q\+Main\+Window $\ast$w)
+\begin{DoxyCompactList}\small\item\em 用来初始化中心组件 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a17393ded2e610d98d951f34a153f219f}{parse}} (const Q\+String \&file\+Name, const Q\+String \&labelfile\+Name)
+\begin{DoxyCompactList}\small\item\em 解析文件（显示图片，解析标注形状） \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_ac1ca645a7efeb29128acd5c5f4539f74}{change\+Shape\+Label}} (Q\+List\+Widget\+Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em 改变标注的状态，槽函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a0528e163af826e20b1085e4c117b5efb}{change\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em 改变标注的选中状态、槽函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_accee48fff29dbdd160e6411fa01bf647}{create\+Shape}} (\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}} s)
+\begin{DoxyCompactList}\small\item\em 创建标注形状 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a0abdf5240ed804261be29acf76b235e5}{key\+Press\+Handle}} (int k)
+\begin{DoxyCompactList}\small\item\em 处理按键事件 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_ac9953e308f4bb5a65c5c75d49375865c}{edit\+Label}} ()
+\begin{DoxyCompactList}\small\item\em 编辑标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_aed73e6c5b4d7a2d81906eb633d4f2d14}{delete\+Label}} ()
+\begin{DoxyCompactList}\small\item\em 删除标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_ae0e369a730265d77f1b1a0b1ff10b290}{edit\+Brush}} ()
+\begin{DoxyCompactList}\small\item\em 编辑画刷大小，画刷是用来进行分割标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a2e0c8f4120d353dc790f0630feeb12a2}{edit\+Color}} ()
+\begin{DoxyCompactList}\small\item\em 编辑标注形状的颜色 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a6b9f21cc0d300cb5cf4199ad15418b29}{zoom\+In}} ()
+\begin{DoxyCompactList}\small\item\em 放大功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a3dd9a0e4b4bbddae0e8fb19c725194dd}{zoom\+Out}} ()
+\begin{DoxyCompactList}\small\item\em 缩小功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_af8bbebf1ffdbb83ba15d319866ead9df}{fit\+Window}} ()
+\begin{DoxyCompactList}\small\item\em 使中心组件宽度适应主窗口 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a9e1f4fbe992a1f57b621ca74a4c3a4af}{original\+Size}} ()
+\begin{DoxyCompactList}\small\item\em 恢复图片原始大小 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_aed38d3514473794df52483ca7a3fe6b1}{magnifier}} (bool b)
+\begin{DoxyCompactList}\small\item\em 放大镜功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_ae18881e2b5be85c77da97aa9b508fd79}{save}} (const Q\+String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em 保存文件功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_acbf54a1d6b888c83511500d2a0b8898f}{hide\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em 隐藏标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a76d443d0808c1da7cd5d9749b727f083}{show\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em 显示标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_central_widget_a0ed10f90962f781111b98c1121372388}{close\+File}} ()
+\begin{DoxyCompactList}\small\item\em 关闭文件功能 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_1_1_central_widget_a882b955709bf2be9b200ad28bfda0480}{$\sim$\+Central\+Widget}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+中心组件基类 
+
+Central\+Widget类负责主窗口中心组件的界面初始化以及后续中心组件的管理。 其两个派生类分别负责2\+D、3\+D中心组件， 2d和3d的模式可以进行切换。 内部的绘画以及标注相关的动作交由\+Label类（或\+Label3\+D类）进行处理。 命令的撤销和重做交由\+Command2\+D类（或\+Command3\+D）进行处理。 标注文件的解析和存储，以及3\+D图片系列文件的解析均交由\+Parse类进行处理。 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_central_widget_aa2a319c209912e3fdebc6987071bd08c}\label{class_my_1_1_central_widget_aa2a319c209912e3fdebc6987071bd08c}} 
+\index{My::CentralWidget@{My::CentralWidget}!CentralWidget@{CentralWidget}}
+\index{CentralWidget@{CentralWidget}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{CentralWidget()}{CentralWidget()}}
+{\footnotesize\ttfamily My\+::\+Central\+Widget\+::\+Central\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a882b955709bf2be9b200ad28bfda0480}\label{class_my_1_1_central_widget_a882b955709bf2be9b200ad28bfda0480}} 
+\index{My::CentralWidget@{My::CentralWidget}!````~CentralWidget@{$\sim$CentralWidget}}
+\index{````~CentralWidget@{$\sim$CentralWidget}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{$\sim$CentralWidget()}{~CentralWidget()}}
+{\footnotesize\ttfamily My\+::\+Central\+Widget\+::$\sim$\+Central\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_central_widget_a0528e163af826e20b1085e4c117b5efb}\label{class_my_1_1_central_widget_a0528e163af826e20b1085e4c117b5efb}} 
+\index{My::CentralWidget@{My::CentralWidget}!changeSelected@{changeSelected}}
+\index{changeSelected@{changeSelected}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{changeSelected()}{changeSelected()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::change\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+改变标注的选中状态、槽函数 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a27ba8c477c8cbb84416d000a49ba85da}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a68bcaff2b045ef62d49bacc422edb135}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_ac1ca645a7efeb29128acd5c5f4539f74}\label{class_my_1_1_central_widget_ac1ca645a7efeb29128acd5c5f4539f74}} 
+\index{My::CentralWidget@{My::CentralWidget}!changeShapeLabel@{changeShapeLabel}}
+\index{changeShapeLabel@{changeShapeLabel}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{changeShapeLabel()}{changeShapeLabel()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::change\+Shape\+Label (\begin{DoxyParamCaption}\item[{Q\+List\+Widget\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+改变标注的状态，槽函数 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_aba15ef0867451fda7cd8d9b5e14d0a21}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a95d5fdf96a54b8eb60cdee6fac1778a3}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a0ed10f90962f781111b98c1121372388}\label{class_my_1_1_central_widget_a0ed10f90962f781111b98c1121372388}} 
+\index{My::CentralWidget@{My::CentralWidget}!closeFile@{closeFile}}
+\index{closeFile@{closeFile}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{closeFile()}{closeFile()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::close\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+关闭文件功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a2d42a32427196baab2be85ac4c385cc4}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_abc2a25e4f2b319bca4d3925404f55bca}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_accee48fff29dbdd160e6411fa01bf647}\label{class_my_1_1_central_widget_accee48fff29dbdd160e6411fa01bf647}} 
+\index{My::CentralWidget@{My::CentralWidget}!createShape@{createShape}}
+\index{createShape@{createShape}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{createShape()}{createShape()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::create\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_my_a03fba0f3b219db5c56e8f0a775d82ac4}{My\+::shape\+Status}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+创建标注形状 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a141a48907273f527f6000805efe0324e}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a824aa24e2f326108a72a93e5519cad7e}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_aed73e6c5b4d7a2d81906eb633d4f2d14}\label{class_my_1_1_central_widget_aed73e6c5b4d7a2d81906eb633d4f2d14}} 
+\index{My::CentralWidget@{My::CentralWidget}!deleteLabel@{deleteLabel}}
+\index{deleteLabel@{deleteLabel}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{deleteLabel()}{deleteLabel()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::delete\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+删除标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_ad722529b74c7e3b4b328c8e65a41a4cd}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a65917becd4e4798c7c1e40875824dac1}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_ae0e369a730265d77f1b1a0b1ff10b290}\label{class_my_1_1_central_widget_ae0e369a730265d77f1b1a0b1ff10b290}} 
+\index{My::CentralWidget@{My::CentralWidget}!editBrush@{editBrush}}
+\index{editBrush@{editBrush}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{editBrush()}{editBrush()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::edit\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+编辑画刷大小，画刷是用来进行分割标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a67b03e010739fc97c073bf4219def6a2}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_af23a8f0d7b5f8b1251489f460a0203ed}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a2e0c8f4120d353dc790f0630feeb12a2}\label{class_my_1_1_central_widget_a2e0c8f4120d353dc790f0630feeb12a2}} 
+\index{My::CentralWidget@{My::CentralWidget}!editColor@{editColor}}
+\index{editColor@{editColor}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{editColor()}{editColor()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::edit\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+编辑标注形状的颜色 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a41b531d1dc00453a92c31240019bd484}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_aaf8cc5dd379d2542a2edce853d287ae3}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_ac9953e308f4bb5a65c5c75d49375865c}\label{class_my_1_1_central_widget_ac9953e308f4bb5a65c5c75d49375865c}} 
+\index{My::CentralWidget@{My::CentralWidget}!editLabel@{editLabel}}
+\index{editLabel@{editLabel}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{editLabel()}{editLabel()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::edit\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+编辑标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a08a8a77334f9335c9d9654b1d7f5cecd}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a316255a7bc5ede3afcd7346077f4db70}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_af8bbebf1ffdbb83ba15d319866ead9df}\label{class_my_1_1_central_widget_af8bbebf1ffdbb83ba15d319866ead9df}} 
+\index{My::CentralWidget@{My::CentralWidget}!fitWindow@{fitWindow}}
+\index{fitWindow@{fitWindow}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{fitWindow()}{fitWindow()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::fit\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+使中心组件宽度适应主窗口 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a5138629c038c79928d9934c96c37661e}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_ae257d6cb88cd4f926713a7bb75b07883}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_acbf54a1d6b888c83511500d2a0b8898f}\label{class_my_1_1_central_widget_acbf54a1d6b888c83511500d2a0b8898f}} 
+\index{My::CentralWidget@{My::CentralWidget}!hidePolygons@{hidePolygons}}
+\index{hidePolygons@{hidePolygons}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{hidePolygons()}{hidePolygons()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::hide\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+隐藏标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a09300bbfa16f4cf7e723aedfc5d48822}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_aa39c284fda2be7fe70a58c70fdde2038}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a0abdf5240ed804261be29acf76b235e5}\label{class_my_1_1_central_widget_a0abdf5240ed804261be29acf76b235e5}} 
+\index{My::CentralWidget@{My::CentralWidget}!keyPressHandle@{keyPressHandle}}
+\index{keyPressHandle@{keyPressHandle}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{keyPressHandle()}{keyPressHandle()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::key\+Press\+Handle (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+处理按键事件 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_af5163068d8d0c84c85160f735d09f2c8}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a8efcbdf09cc1da40ae7bd6159f6c95bf}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_aa92f542f952111c2f588f39d1f176e38}\label{class_my_1_1_central_widget_aa92f542f952111c2f588f39d1f176e38}} 
+\index{My::CentralWidget@{My::CentralWidget}!labelAdded@{labelAdded}}
+\index{labelAdded@{labelAdded}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{labelAdded}{labelAdded}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::label\+Added (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$}]{shape,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+标注添加信号 
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a4d9264a39f2364a834aecd1b87d4157a}\label{class_my_1_1_central_widget_a4d9264a39f2364a834aecd1b87d4157a}} 
+\index{My::CentralWidget@{My::CentralWidget}!labelChanged@{labelChanged}}
+\index{labelChanged@{labelChanged}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{labelChanged}{labelChanged}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::label\+Changed (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+标注改变信号 
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_ae1006c8f16322879377a02144d8532d6}\label{class_my_1_1_central_widget_ae1006c8f16322879377a02144d8532d6}} 
+\index{My::CentralWidget@{My::CentralWidget}!labelDeleted@{labelDeleted}}
+\index{labelDeleted@{labelDeleted}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{labelDeleted}{labelDeleted}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::label\+Deleted (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+标注删除信号 
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_aff98532757ed466c873684ee8438783d}\label{class_my_1_1_central_widget_aff98532757ed466c873684ee8438783d}} 
+\index{My::CentralWidget@{My::CentralWidget}!labelsFinished@{labelsFinished}}
+\index{labelsFinished@{labelsFinished}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{labelsFinished}{labelsFinished}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::labels\+Finished (\begin{DoxyParamCaption}\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape}{My\+::\+Shape}} $\ast$ $>$ \&}]{shapes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+标注解析完毕信号 
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_aed38d3514473794df52483ca7a3fe6b1}\label{class_my_1_1_central_widget_aed38d3514473794df52483ca7a3fe6b1}} 
+\index{My::CentralWidget@{My::CentralWidget}!magnifier@{magnifier}}
+\index{magnifier@{magnifier}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{magnifier()}{magnifier()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::magnifier (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+放大镜功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a91ff359d0011223a19e2c9d2c04fcc78}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a8363e5fc02c5d793e29ffb5450574d0a}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a9e1f4fbe992a1f57b621ca74a4c3a4af}\label{class_my_1_1_central_widget_a9e1f4fbe992a1f57b621ca74a4c3a4af}} 
+\index{My::CentralWidget@{My::CentralWidget}!originalSize@{originalSize}}
+\index{originalSize@{originalSize}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{originalSize()}{originalSize()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::original\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+恢复图片原始大小 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a7e1fd853d2db9e5baeb0dec3505355bd}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_af68200f52da0edb4deff2cc418661fff}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a17393ded2e610d98d951f34a153f219f}\label{class_my_1_1_central_widget_a17393ded2e610d98d951f34a153f219f}} 
+\index{My::CentralWidget@{My::CentralWidget}!parse@{parse}}
+\index{parse@{parse}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::parse (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{const Q\+String \&}]{labelfile\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+解析文件（显示图片，解析标注形状） 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a46547fe7f2443ea2e0ceab02e70be11a}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a23df64899f68879af8aeb1d3e2d062b2}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_ae18881e2b5be85c77da97aa9b508fd79}\label{class_my_1_1_central_widget_ae18881e2b5be85c77da97aa9b508fd79}} 
+\index{My::CentralWidget@{My::CentralWidget}!save@{save}}
+\index{save@{save}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::save (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+保存文件功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a2557eb2b3216e53ee47c14a9b668de92}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a05f0c8f7279469a9c5fc683797583f64}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_aef71c825c600fd3c16b79dff04c4d2c1}\label{class_my_1_1_central_widget_aef71c825c600fd3c16b79dff04c4d2c1}} 
+\index{My::CentralWidget@{My::CentralWidget}!selectedChanged@{selectedChanged}}
+\index{selectedChanged@{selectedChanged}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{selectedChanged}{selectedChanged}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::selected\+Changed (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+标注选中状态改变信号 
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a55ba105612c69e44406071887c52429b}\label{class_my_1_1_central_widget_a55ba105612c69e44406071887c52429b}} 
+\index{My::CentralWidget@{My::CentralWidget}!setUp@{setUp}}
+\index{setUp@{setUp}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::set\+Up (\begin{DoxyParamCaption}\item[{Q\+Main\+Window $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+用来初始化中心组件 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a8c2736534148de5e99221a75820d461c}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_a820f5ec71910f2f780daba97e284fcca}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a76d443d0808c1da7cd5d9749b727f083}\label{class_my_1_1_central_widget_a76d443d0808c1da7cd5d9749b727f083}} 
+\index{My::CentralWidget@{My::CentralWidget}!showPolygons@{showPolygons}}
+\index{showPolygons@{showPolygons}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{showPolygons()}{showPolygons()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::show\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+显示标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a784e0546e1dd2f4e4619bdd12180d7c6}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_aff74d47ebcb9fe8c5dd5a5acf10d544a}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a6b9f21cc0d300cb5cf4199ad15418b29}\label{class_my_1_1_central_widget_a6b9f21cc0d300cb5cf4199ad15418b29}} 
+\index{My::CentralWidget@{My::CentralWidget}!zoomIn@{zoomIn}}
+\index{zoomIn@{zoomIn}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{zoomIn()}{zoomIn()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::zoom\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+放大功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a99a6b16cb1b3dd65c8c2dd736e7ffdab}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_ae8cb5d55659ccdd262fb2e649d0122ff}{Central\+W\+Init2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_central_widget_a3dd9a0e4b4bbddae0e8fb19c725194dd}\label{class_my_1_1_central_widget_a3dd9a0e4b4bbddae0e8fb19c725194dd}} 
+\index{My::CentralWidget@{My::CentralWidget}!zoomOut@{zoomOut}}
+\index{zoomOut@{zoomOut}!My::CentralWidget@{My::CentralWidget}}
+\doxysubsubsection{\texorpdfstring{zoomOut()}{zoomOut()}}
+{\footnotesize\ttfamily void My\+::\+Central\+Widget\+::zoom\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+缩小功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_central_w_init3_d_a839609da8ede22d638a4dc2c9f30e6f6}{Central\+W\+Init3D}}, and \mbox{\hyperlink{class_central_w_init2_d_ac5efd20e3a98a4560faeeda3bdeb9ff6}{Central\+W\+Init2D}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_central_widget_8h}{Central\+Widget.\+h}}\item 
+src/\mbox{\hyperlink{centralwidget_8cpp}{centralwidget.\+cpp}}\end{DoxyCompactItemize}

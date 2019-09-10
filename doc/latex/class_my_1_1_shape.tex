@@ -1,0 +1,185 @@
+\hypertarget{class_my_1_1_shape}{}\doxysection{My\+::Shape Class Reference}
+\label{class_my_1_1_shape}\index{My::Shape@{My::Shape}}
+
+
+所有标注形状的基类  
+
+
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+Inheritance diagram for My\+::Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.068965cm]{class_my_1_1_shape}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{Type}} \{ \newline
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecaaeee64946e19dff8592819dcab8808da}{Brush}}, 
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3fdaa619a541251a682b466b1fe9537b}{Rectangle}}, 
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca5a88aee74c77e0e9c5dff2570c733720}{Polygons}}, 
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca57e14f2a8da0378ff9daa0eece850b5b}{Circle}}, 
+\newline
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecac71d608efbc7723644ccbb72bca5342d}{Curve}}, 
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca2551b1c209f3dc5a8d1814bf0d469450}{Rectangle3D}}, 
+\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3d0929ac22e921fbdd795bcf3cf8d283}{Brush3D}}
+ \}
+\begin{DoxyCompactList}\small\item\em 标注形状的类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_shape_a0eda911052d46bc9982bb28de1113ba0}{Shape}} (\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{Type}} t)
+\item 
+virtual \mbox{\hyperlink{class_my_1_1_shape_a94ae9fe5afe6fcd0707e490dcc692826}{$\sim$\+Shape}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{Type}} \mbox{\hyperlink{class_my_1_1_shape_a57398a4393a11acac4c76cc4d7850012}{type}}
+\begin{DoxyCompactList}\small\item\em 标注类型 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_my_1_1_shape_a82de6aec63e5e522d15d0aafbb6d64f9}{label}}
+\begin{DoxyCompactList}\small\item\em 标注对应的标签文字 \end{DoxyCompactList}\item 
+Q\+Color \mbox{\hyperlink{class_my_1_1_shape_afbaa96de6fb819fc0e871262721714b5}{color}} =Q\+Color(100,255,0,100)
+\begin{DoxyCompactList}\small\item\em 默认标注颜色 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_shape_a1fff0122efe349e6a2cf0a2b82670348}{is\+Fill}} =false
+\begin{DoxyCompactList}\small\item\em 是否填充内部 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_shape_a7b5d86d3475c4daedb29b82057fbce71}{is\+Hide}} =false
+\begin{DoxyCompactList}\small\item\em 是否隐藏标注 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_shape_aee418cba947dbe37906e953250a4aeba}{is\+Hover}} =false
+\begin{DoxyCompactList}\small\item\em 是否悬浮 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+所有标注形状的基类 
+
+负责形状的绘制及形状的存储 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}} 
+\index{My::Shape@{My::Shape}!Type@{Type}}
+\index{Type@{Type}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{My\+::\+Shape\+::\+Type}}}
+
+
+
+标注形状的类型 
+
+Brush代表画刷形状，用于分割标注， Rectangle代表矩形形状，\+Polygons代表多边形形状，\+Circle代表圆形形状，\+Curve代表平滑曲线形状 Rectangle3\+D代表3d长方体形状，\+Brush3\+D代表3d画刷形状，用于3d分割标注 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Brush@{Brush}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Brush@{Brush}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecaaeee64946e19dff8592819dcab8808da}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecaaeee64946e19dff8592819dcab8808da}} 
+Brush&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rectangle@{Rectangle}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Rectangle@{Rectangle}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3fdaa619a541251a682b466b1fe9537b}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3fdaa619a541251a682b466b1fe9537b}} 
+Rectangle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Polygons@{Polygons}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Polygons@{Polygons}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca5a88aee74c77e0e9c5dff2570c733720}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca5a88aee74c77e0e9c5dff2570c733720}} 
+Polygons&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Circle@{Circle}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Circle@{Circle}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca57e14f2a8da0378ff9daa0eece850b5b}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca57e14f2a8da0378ff9daa0eece850b5b}} 
+Circle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Curve@{Curve}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Curve@{Curve}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecac71d608efbc7723644ccbb72bca5342d}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ecac71d608efbc7723644ccbb72bca5342d}} 
+Curve&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rectangle3D@{Rectangle3D}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Rectangle3D@{Rectangle3D}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca2551b1c209f3dc5a8d1814bf0d469450}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca2551b1c209f3dc5a8d1814bf0d469450}} 
+Rectangle3D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Brush3D@{Brush3D}!My::Shape@{My::Shape}}\index{My::Shape@{My::Shape}!Brush3D@{Brush3D}}}\mbox{\Hypertarget{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3d0929ac22e921fbdd795bcf3cf8d283}\label{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5eca3d0929ac22e921fbdd795bcf3cf8d283}} 
+Brush3D&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape_a0eda911052d46bc9982bb28de1113ba0}\label{class_my_1_1_shape_a0eda911052d46bc9982bb28de1113ba0}} 
+\index{My::Shape@{My::Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily My\+::\+Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{Type}}}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_my_1_1_shape_a94ae9fe5afe6fcd0707e490dcc692826}\label{class_my_1_1_shape_a94ae9fe5afe6fcd0707e490dcc692826}} 
+\index{My::Shape@{My::Shape}!````~Shape@{$\sim$Shape}}
+\index{````~Shape@{$\sim$Shape}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shape()}{~Shape()}}
+{\footnotesize\ttfamily My\+::\+Shape\+::$\sim$\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_shape_afbaa96de6fb819fc0e871262721714b5}\label{class_my_1_1_shape_afbaa96de6fb819fc0e871262721714b5}} 
+\index{My::Shape@{My::Shape}!color@{color}}
+\index{color@{color}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Q\+Color My\+::\+Shape\+::color =Q\+Color(100,255,0,100)}
+
+
+
+默认标注颜色 
+
+\mbox{\Hypertarget{class_my_1_1_shape_a1fff0122efe349e6a2cf0a2b82670348}\label{class_my_1_1_shape_a1fff0122efe349e6a2cf0a2b82670348}} 
+\index{My::Shape@{My::Shape}!isFill@{isFill}}
+\index{isFill@{isFill}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{isFill}{isFill}}
+{\footnotesize\ttfamily bool My\+::\+Shape\+::is\+Fill =false}
+
+
+
+是否填充内部 
+
+当被选中时，is\+Fill会变为true，填充标注形状的内部，便于用户交互 \mbox{\Hypertarget{class_my_1_1_shape_a7b5d86d3475c4daedb29b82057fbce71}\label{class_my_1_1_shape_a7b5d86d3475c4daedb29b82057fbce71}} 
+\index{My::Shape@{My::Shape}!isHide@{isHide}}
+\index{isHide@{isHide}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{isHide}{isHide}}
+{\footnotesize\ttfamily bool My\+::\+Shape\+::is\+Hide =false}
+
+
+
+是否隐藏标注 
+
+\mbox{\Hypertarget{class_my_1_1_shape_aee418cba947dbe37906e953250a4aeba}\label{class_my_1_1_shape_aee418cba947dbe37906e953250a4aeba}} 
+\index{My::Shape@{My::Shape}!isHover@{isHover}}
+\index{isHover@{isHover}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{isHover}{isHover}}
+{\footnotesize\ttfamily bool My\+::\+Shape\+::is\+Hover =false}
+
+
+
+是否悬浮 
+
+当前鼠标是否悬浮在标注内部，若悬浮在内部，则变为true，填充内部颜色，便于用户交互 \mbox{\Hypertarget{class_my_1_1_shape_a82de6aec63e5e522d15d0aafbb6d64f9}\label{class_my_1_1_shape_a82de6aec63e5e522d15d0aafbb6d64f9}} 
+\index{My::Shape@{My::Shape}!label@{label}}
+\index{label@{label}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily Q\+String My\+::\+Shape\+::label}
+
+
+
+标注对应的标签文字 
+
+\mbox{\Hypertarget{class_my_1_1_shape_a57398a4393a11acac4c76cc4d7850012}\label{class_my_1_1_shape_a57398a4393a11acac4c76cc4d7850012}} 
+\index{My::Shape@{My::Shape}!type@{type}}
+\index{type@{type}!My::Shape@{My::Shape}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_my_1_1_shape_a6113d41b1f6ae469f21ba84bb120f5ec}{Type}} My\+::\+Shape\+::type}
+
+
+
+标注类型 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{shape_8h}{shape.\+h}}\item 
+src/\mbox{\hyperlink{shape_8cpp}{shape.\+cpp}}\end{DoxyCompactItemize}

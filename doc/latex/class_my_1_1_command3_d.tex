@@ -1,0 +1,157 @@
+\hypertarget{class_my_1_1_command3_d}{}\doxysection{My\+::Command3D Class Reference}
+\label{class_my_1_1_command3_d}\index{My::Command3D@{My::Command3D}}
+
+
+3d状态的命令栈类，用于实现撤销和重做功能，继承\+Command类  
+
+
+
+
+{\ttfamily \#include $<$command3d.\+h$>$}
+
+Inheritance diagram for My\+::Command3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_1_1_command3_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_a359f7bdf964cbe791bc419235e225a47}{log\+Add}} (int index)
+\begin{DoxyCompactList}\small\item\em 记录添加标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_adf9eba4e1ad822cf5e89ba862ddbc8fd}{log\+Delete}} (int index, int id)
+\begin{DoxyCompactList}\small\item\em 记录删除标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_af40dcf7a634c669734d3e4a1bacea4c3}{log\+Move}} (int index, float xoffset, float yoffset, int id=0)
+\begin{DoxyCompactList}\small\item\em 记录移动标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_a2e87cdf4e59f89e5d97dc843a37f7aff}{log\+Change}} (int index, Q\+String s1, Q\+String s2)
+\begin{DoxyCompactList}\small\item\em 记录更改标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_ad6d108813272eead25e8a7fdfa35d109}{undo}} ()
+\begin{DoxyCompactList}\small\item\em 撤销功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command3_d_a892bc79165749800697fa46e4bc74f8f}{redo}} ()
+\begin{DoxyCompactList}\small\item\em 重做功能 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_1_1_command3_d_a2b734ad4038bd15a03a68cafb52eb506}{$\sim$\+Command3D}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}} $\ast$ \mbox{\hyperlink{class_my_1_1_command3_d_a384e44da69cf375f3f4b737146895222}{manager}}
+\begin{DoxyCompactList}\small\item\em 存储中心组件指针 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+3d状态的命令栈类，用于实现撤销和重做功能，继承\+Command类 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_command3_d_a2b734ad4038bd15a03a68cafb52eb506}\label{class_my_1_1_command3_d_a2b734ad4038bd15a03a68cafb52eb506}} 
+\index{My::Command3D@{My::Command3D}!````~Command3D@{$\sim$Command3D}}
+\index{````~Command3D@{$\sim$Command3D}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command3D()}{~Command3D()}}
+{\footnotesize\ttfamily My\+::\+Command3\+D\+::$\sim$\+Command3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_command3_d_a359f7bdf964cbe791bc419235e225a47}\label{class_my_1_1_command3_d_a359f7bdf964cbe791bc419235e225a47}} 
+\index{My::Command3D@{My::Command3D}!logAdd@{logAdd}}
+\index{logAdd@{logAdd}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{logAdd()}{logAdd()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::log\+Add (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录添加标注 
+
+3d中心组件的记录添加 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a963f572d5f1afeb4fb592314a8a2bab5}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command3_d_a2e87cdf4e59f89e5d97dc843a37f7aff}\label{class_my_1_1_command3_d_a2e87cdf4e59f89e5d97dc843a37f7aff}} 
+\index{My::Command3D@{My::Command3D}!logChange@{logChange}}
+\index{logChange@{logChange}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{logChange()}{logChange()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::log\+Change (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{Q\+String}]{s1,  }\item[{Q\+String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录更改标注 
+
+3d中心组件的记录改变 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_ae60261502fea64d048257a7de45ae2f7}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command3_d_adf9eba4e1ad822cf5e89ba862ddbc8fd}\label{class_my_1_1_command3_d_adf9eba4e1ad822cf5e89ba862ddbc8fd}} 
+\index{My::Command3D@{My::Command3D}!logDelete@{logDelete}}
+\index{logDelete@{logDelete}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{logDelete()}{logDelete()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::log\+Delete (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录删除标注 
+
+3d中心组件的记录删除 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a4128ef23b6bb050a51dfa0a9522be8bf}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command3_d_af40dcf7a634c669734d3e4a1bacea4c3}\label{class_my_1_1_command3_d_af40dcf7a634c669734d3e4a1bacea4c3}} 
+\index{My::Command3D@{My::Command3D}!logMove@{logMove}}
+\index{logMove@{logMove}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{logMove()}{logMove()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::log\+Move (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录移动标注 
+
+3d中心组件的记录移动 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_aa7925d85940b23daa4b4635006ec3034}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command3_d_a892bc79165749800697fa46e4bc74f8f}\label{class_my_1_1_command3_d_a892bc79165749800697fa46e4bc74f8f}} 
+\index{My::Command3D@{My::Command3D}!redo@{redo}}
+\index{redo@{redo}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{redo()}{redo()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重做功能 
+
+3d中心组件的重做动作 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a4dc178f7ce35fd687dd6cecad0cba588}{My\+::\+Command}}.
+
+\mbox{\Hypertarget{class_my_1_1_command3_d_ad6d108813272eead25e8a7fdfa35d109}\label{class_my_1_1_command3_d_ad6d108813272eead25e8a7fdfa35d109}} 
+\index{My::Command3D@{My::Command3D}!undo@{undo}}
+\index{undo@{undo}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily void My\+::\+Command3\+D\+::undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+撤销功能 
+
+3d中心组件的撤销动作 
+
+Reimplemented from \mbox{\hyperlink{class_my_1_1_command_a5015d21ddaeeba4e844483d116f7c21a}{My\+::\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_command3_d_a384e44da69cf375f3f4b737146895222}\label{class_my_1_1_command3_d_a384e44da69cf375f3f4b737146895222}} 
+\index{My::Command3D@{My::Command3D}!manager@{manager}}
+\index{manager@{manager}!My::Command3D@{My::Command3D}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}}$\ast$ My\+::\+Command3\+D\+::manager}
+
+
+
+存储中心组件指针 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{command3d_8h}{command3d.\+h}}\item 
+src/\mbox{\hyperlink{command3d_8cpp}{command3d.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,302 @@
+\hypertarget{class_my_1_1_label3_d}{}\doxysection{My\+::Label3D Class Reference}
+\label{class_my_1_1_label3_d}\index{My::Label3D@{My::Label3D}}
+
+
+3d绘制图片及标注类，继承\+Q\+Label  
+
+
+
+
+{\ttfamily \#include $<$Label3\+D.\+h$>$}
+
+Inheritance diagram for My\+::Label3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_1_1_label3_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_1_1_label3_d_a138bd4a6f864e7d2d9c90e2ef64581e1}{Label3D}} (Q\+Widget $\ast$parent, int v)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label3_d_aa9126fe5a1c010efca25e9df3cfaed0c}{paint\+Event}} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label3_d_a35279a1b9ba935427631863e5cc05f17}{mouse\+Press\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写鼠标移动事件的处理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label3_d_ac1aa9181ff88e9d75c086d8a1287ed03}{mouse\+Move\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写鼠标移动事件的处理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_1_1_label3_d_a45c445980d3694394c1cd72b8d160639}{mouse\+Release\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em 重写释放鼠标事件的处理 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_1_1_label3_d_a2415a5d897f7ae325de86a49cca47d52}{$\sim$\+Label3D}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Pixmap $\ast$ \mbox{\hyperlink{class_my_1_1_label3_d_a3531a2e2c1f9f23d5e8fbfb736ae712d}{pixmap}}
+\begin{DoxyCompactList}\small\item\em 中心图片 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}} $\ast$ \mbox{\hyperlink{class_my_1_1_label3_d_aeae2c6b876a447002d865700f81a3bfb}{manager}}
+\begin{DoxyCompactList}\small\item\em 3d中心组件 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_a6a7d3d4ae0f7188717c170108998839d}{cursorX}} =0
+\begin{DoxyCompactList}\small\item\em 当前鼠标位置 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_acfa0b98452ad0b1fba2ead3aa065b5a1}{cursorY}} =0
+\begin{DoxyCompactList}\small\item\em 当前鼠标位置 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_aa51f8ec73d8e7798b6206575147677c5}{x\+Offset}} =0
+\begin{DoxyCompactList}\small\item\em 每次移动标注形状的微小偏移量 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_a3aeb463a3109dee3cb12e780ba151f25}{y\+Offset}} =0
+\item 
+int \mbox{\hyperlink{class_my_1_1_label3_d_a335c2ce170e77507fda93a3db4554760}{real\+Length}}
+\begin{DoxyCompactList}\small\item\em 图片真实高度，在3d图片重建过程中，侧面的图片高度过小，因此进行了默认拉伸，默认高度放大倍数为3倍 \end{DoxyCompactList}\item 
+Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \mbox{\hyperlink{class_my_1_1_label3_d_a461fd12d8b6a14cfcb1ba4cffbd8890d}{shapes}}
+\begin{DoxyCompactList}\small\item\em 存储标注 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_a6488ced2d24e5fa8b8971d9927b2027f}{zoom\+Level}} =1.\+0
+\begin{DoxyCompactList}\small\item\em 默认放大倍数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_1_1_label3_d_a255002da137783e730814dbefdb378b9}{zindex}} =0
+\begin{DoxyCompactList}\small\item\em 当前图片在该视角下的顺序 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_label3_d_a8aed0595032d2d48f07639620245f6a7}{Magni\+Fier}} =false
+\begin{DoxyCompactList}\small\item\em 是否开启放大镜 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_1_1_label3_d_a861e90cc9c97e9bd517e49e98e8814a4}{is\+Finished}} =false
+\begin{DoxyCompactList}\small\item\em 当前视角的形状是否创建完毕 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Pixmap \mbox{\hyperlink{class_my_1_1_label3_d_ac8cbf6e9743263a938cd43ee12e0ded2}{magnifier\+Area}}
+\begin{DoxyCompactList}\small\item\em 放大区域 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_a9f03485ab203d511d9554f8d65e21a1c}{X\+Offset\+Sum}} =0
+\begin{DoxyCompactList}\small\item\em 每次移动标注形状的总偏移量，命令栈撤销、重做用 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_my_1_1_label3_d_aa0a2d3f6b0f0b4c78975e6e40319e3ae}{Y\+Offset\+Sum}} =0
+\begin{DoxyCompactList}\small\item\em 每次移动标注形状的总偏移量，命令栈撤销、重做用 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_1_1_label3_d_a84f74cdb2bb8dab4b3bf6f495aa29449}{view\+Angle}}
+\begin{DoxyCompactList}\small\item\em 当前label所在视角1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+3d绘制图片及标注类，继承\+Q\+Label 
+
+内部具体的形状的绘制均交由\+Shape类进行处理， Shape类为形状基类， 具体的绘制则会调用对应形状类的虚函数。 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_label3_d_a138bd4a6f864e7d2d9c90e2ef64581e1}\label{class_my_1_1_label3_d_a138bd4a6f864e7d2d9c90e2ef64581e1}} 
+\index{My::Label3D@{My::Label3D}!Label3D@{Label3D}}
+\index{Label3D@{Label3D}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{Label3D()}{Label3D()}}
+{\footnotesize\ttfamily My\+::\+Label3\+D\+::\+Label3D (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a2415a5d897f7ae325de86a49cca47d52}\label{class_my_1_1_label3_d_a2415a5d897f7ae325de86a49cca47d52}} 
+\index{My::Label3D@{My::Label3D}!````~Label3D@{$\sim$Label3D}}
+\index{````~Label3D@{$\sim$Label3D}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Label3D()}{~Label3D()}}
+{\footnotesize\ttfamily My\+::\+Label3\+D\+::$\sim$\+Label3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_label3_d_ac1aa9181ff88e9d75c086d8a1287ed03}\label{class_my_1_1_label3_d_ac1aa9181ff88e9d75c086d8a1287ed03}} 
+\index{My::Label3D@{My::Label3D}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label3\+D\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写鼠标移动事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a35279a1b9ba935427631863e5cc05f17}\label{class_my_1_1_label3_d_a35279a1b9ba935427631863e5cc05f17}} 
+\index{My::Label3D@{My::Label3D}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label3\+D\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写鼠标移动事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a45c445980d3694394c1cd72b8d160639}\label{class_my_1_1_label3_d_a45c445980d3694394c1cd72b8d160639}} 
+\index{My::Label3D@{My::Label3D}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label3\+D\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写释放鼠标事件的处理 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_aa9126fe5a1c010efca25e9df3cfaed0c}\label{class_my_1_1_label3_d_aa9126fe5a1c010efca25e9df3cfaed0c}} 
+\index{My::Label3D@{My::Label3D}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void My\+::\+Label3\+D\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+重写 
+
+重写绘制事件的处理 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_label3_d_a6a7d3d4ae0f7188717c170108998839d}\label{class_my_1_1_label3_d_a6a7d3d4ae0f7188717c170108998839d}} 
+\index{My::Label3D@{My::Label3D}!cursorX@{cursorX}}
+\index{cursorX@{cursorX}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{cursorX}{cursorX}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::cursorX =0}
+
+
+
+当前鼠标位置 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_acfa0b98452ad0b1fba2ead3aa065b5a1}\label{class_my_1_1_label3_d_acfa0b98452ad0b1fba2ead3aa065b5a1}} 
+\index{My::Label3D@{My::Label3D}!cursorY@{cursorY}}
+\index{cursorY@{cursorY}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{cursorY}{cursorY}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::cursorY =0}
+
+
+
+当前鼠标位置 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a861e90cc9c97e9bd517e49e98e8814a4}\label{class_my_1_1_label3_d_a861e90cc9c97e9bd517e49e98e8814a4}} 
+\index{My::Label3D@{My::Label3D}!isFinished@{isFinished}}
+\index{isFinished@{isFinished}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{isFinished}{isFinished}}
+{\footnotesize\ttfamily bool My\+::\+Label3\+D\+::is\+Finished =false}
+
+
+
+当前视角的形状是否创建完毕 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a8aed0595032d2d48f07639620245f6a7}\label{class_my_1_1_label3_d_a8aed0595032d2d48f07639620245f6a7}} 
+\index{My::Label3D@{My::Label3D}!MagniFier@{MagniFier}}
+\index{MagniFier@{MagniFier}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{MagniFier}{MagniFier}}
+{\footnotesize\ttfamily bool My\+::\+Label3\+D\+::\+Magni\+Fier =false}
+
+
+
+是否开启放大镜 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_ac8cbf6e9743263a938cd43ee12e0ded2}\label{class_my_1_1_label3_d_ac8cbf6e9743263a938cd43ee12e0ded2}} 
+\index{My::Label3D@{My::Label3D}!magnifierArea@{magnifierArea}}
+\index{magnifierArea@{magnifierArea}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{magnifierArea}{magnifierArea}}
+{\footnotesize\ttfamily Q\+Pixmap My\+::\+Label3\+D\+::magnifier\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+放大区域 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_aeae2c6b876a447002d865700f81a3bfb}\label{class_my_1_1_label3_d_aeae2c6b876a447002d865700f81a3bfb}} 
+\index{My::Label3D@{My::Label3D}!manager@{manager}}
+\index{manager@{manager}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_central_w_init3_d}{Central\+W\+Init3D}}$\ast$ My\+::\+Label3\+D\+::manager}
+
+
+
+3d中心组件 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a3531a2e2c1f9f23d5e8fbfb736ae712d}\label{class_my_1_1_label3_d_a3531a2e2c1f9f23d5e8fbfb736ae712d}} 
+\index{My::Label3D@{My::Label3D}!pixmap@{pixmap}}
+\index{pixmap@{pixmap}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{pixmap}{pixmap}}
+{\footnotesize\ttfamily Q\+Pixmap$\ast$ My\+::\+Label3\+D\+::pixmap}
+
+
+
+中心图片 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a335c2ce170e77507fda93a3db4554760}\label{class_my_1_1_label3_d_a335c2ce170e77507fda93a3db4554760}} 
+\index{My::Label3D@{My::Label3D}!realLength@{realLength}}
+\index{realLength@{realLength}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{realLength}{realLength}}
+{\footnotesize\ttfamily int My\+::\+Label3\+D\+::real\+Length}
+
+
+
+图片真实高度，在3d图片重建过程中，侧面的图片高度过小，因此进行了默认拉伸，默认高度放大倍数为3倍 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a461fd12d8b6a14cfcb1ba4cffbd8890d}\label{class_my_1_1_label3_d_a461fd12d8b6a14cfcb1ba4cffbd8890d}} 
+\index{My::Label3D@{My::Label3D}!shapes@{shapes}}
+\index{shapes@{shapes}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{shapes}{shapes}}
+{\footnotesize\ttfamily Q\+List$<$\mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}}$\ast$$>$ My\+::\+Label3\+D\+::shapes}
+
+
+
+存储标注 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a84f74cdb2bb8dab4b3bf6f495aa29449}\label{class_my_1_1_label3_d_a84f74cdb2bb8dab4b3bf6f495aa29449}} 
+\index{My::Label3D@{My::Label3D}!viewAngle@{viewAngle}}
+\index{viewAngle@{viewAngle}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{viewAngle}{viewAngle}}
+{\footnotesize\ttfamily int My\+::\+Label3\+D\+::view\+Angle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+当前label所在视角1 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_aa51f8ec73d8e7798b6206575147677c5}\label{class_my_1_1_label3_d_aa51f8ec73d8e7798b6206575147677c5}} 
+\index{My::Label3D@{My::Label3D}!xOffset@{xOffset}}
+\index{xOffset@{xOffset}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{xOffset}{xOffset}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::x\+Offset =0}
+
+
+
+每次移动标注形状的微小偏移量 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a9f03485ab203d511d9554f8d65e21a1c}\label{class_my_1_1_label3_d_a9f03485ab203d511d9554f8d65e21a1c}} 
+\index{My::Label3D@{My::Label3D}!XOffsetSum@{XOffsetSum}}
+\index{XOffsetSum@{XOffsetSum}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{XOffsetSum}{XOffsetSum}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::\+X\+Offset\+Sum =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+每次移动标注形状的总偏移量，命令栈撤销、重做用 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a3aeb463a3109dee3cb12e780ba151f25}\label{class_my_1_1_label3_d_a3aeb463a3109dee3cb12e780ba151f25}} 
+\index{My::Label3D@{My::Label3D}!yOffset@{yOffset}}
+\index{yOffset@{yOffset}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{yOffset}{yOffset}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::y\+Offset =0}
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_aa0a2d3f6b0f0b4c78975e6e40319e3ae}\label{class_my_1_1_label3_d_aa0a2d3f6b0f0b4c78975e6e40319e3ae}} 
+\index{My::Label3D@{My::Label3D}!YOffsetSum@{YOffsetSum}}
+\index{YOffsetSum@{YOffsetSum}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{YOffsetSum}{YOffsetSum}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::\+Y\+Offset\+Sum =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+每次移动标注形状的总偏移量，命令栈撤销、重做用 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a255002da137783e730814dbefdb378b9}\label{class_my_1_1_label3_d_a255002da137783e730814dbefdb378b9}} 
+\index{My::Label3D@{My::Label3D}!zindex@{zindex}}
+\index{zindex@{zindex}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{zindex}{zindex}}
+{\footnotesize\ttfamily int My\+::\+Label3\+D\+::zindex =0}
+
+
+
+当前图片在该视角下的顺序 
+
+\mbox{\Hypertarget{class_my_1_1_label3_d_a6488ced2d24e5fa8b8971d9927b2027f}\label{class_my_1_1_label3_d_a6488ced2d24e5fa8b8971d9927b2027f}} 
+\index{My::Label3D@{My::Label3D}!zoomLevel@{zoomLevel}}
+\index{zoomLevel@{zoomLevel}!My::Label3D@{My::Label3D}}
+\doxysubsubsection{\texorpdfstring{zoomLevel}{zoomLevel}}
+{\footnotesize\ttfamily float My\+::\+Label3\+D\+::zoom\+Level =1.\+0}
+
+
+
+默认放大倍数 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_label3_d_8h}{Label3\+D.\+h}}\item 
+src/\mbox{\hyperlink{label3d_8cpp}{label3d.\+cpp}}\end{DoxyCompactItemize}

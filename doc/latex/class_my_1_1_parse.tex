@@ -1,0 +1,88 @@
+\hypertarget{class_my_1_1_parse}{}\doxysection{My\+::Parse Class Reference}
+\label{class_my_1_1_parse}\index{My::Parse@{My::Parse}}
+
+
+负责解析标注文件以及图片  
+
+
+
+
+{\ttfamily \#include $<$parse.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_my_1_1_parse_a264150636a8744eb51c24a4b2e6c396b}{parse}} (const Q\+String \&file\+Name, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \&shapes, const Q\+String \&labelfile\+Name)
+\begin{DoxyCompactList}\small\item\em 2d图片及标注的解析 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_my_1_1_parse_afaacbbf6c7e8e575a24ac56d56602b3c}{write}} (const Q\+String \&file\+Name, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \&shapes)
+\begin{DoxyCompactList}\small\item\em 2d图片及标注信息的保存 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_my_1_1_parse_a095e5b338629583d68c91f94f818213d}{parse3D}} (const Q\+String \&file\+Name, Q\+List$<$ cv\+::\+Mat $>$ \&list, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&shapes, const Q\+String \&labelfile\+Name)
+\begin{DoxyCompactList}\small\item\em 3d图片及标注的解析 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_my_1_1_parse_a1bd26035122eebf89ea06214be9051dd}{parse\+Image}} (int dimension, Q\+List$<$ cv\+::\+Mat $>$ \&list, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&shapes, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_label3_d}{Label3D}} $\ast$ $>$ \&labels)
+\begin{DoxyCompactList}\small\item\em 3d图片及标注某个视角的解析 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_my_1_1_parse_a10a4303ab2804a75a4ab30a0241fb22d}{write3D}} (const Q\+String \&file\+Name, Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&shapes)
+\begin{DoxyCompactList}\small\item\em 3d图片及标注信息的保存 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+负责解析标注文件以及图片 
+
+2d、3d图片及标注文件的解析和保存均由\+Parse类负责 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_parse_a264150636a8744eb51c24a4b2e6c396b}\label{class_my_1_1_parse_a264150636a8744eb51c24a4b2e6c396b}} 
+\index{My::Parse@{My::Parse}!parse@{parse}}
+\index{parse@{parse}!My::Parse@{My::Parse}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void My\+::\+Parse\+::parse (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \&}]{shapes,  }\item[{const Q\+String \&}]{labelfile\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+2d图片及标注的解析 
+
+解析2d图片以及标注信息 \mbox{\Hypertarget{class_my_1_1_parse_a095e5b338629583d68c91f94f818213d}\label{class_my_1_1_parse_a095e5b338629583d68c91f94f818213d}} 
+\index{My::Parse@{My::Parse}!parse3D@{parse3D}}
+\index{parse3D@{parse3D}!My::Parse@{My::Parse}}
+\doxysubsubsection{\texorpdfstring{parse3D()}{parse3D()}}
+{\footnotesize\ttfamily void My\+::\+Parse\+::parse3D (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{Q\+List$<$ cv\+::\+Mat $>$ \&}]{list,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&}]{shapes,  }\item[{const Q\+String \&}]{labelfile\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+3d图片及标注的解析 
+
+解析3d图片以及标注信息 \mbox{\Hypertarget{class_my_1_1_parse_a1bd26035122eebf89ea06214be9051dd}\label{class_my_1_1_parse_a1bd26035122eebf89ea06214be9051dd}} 
+\index{My::Parse@{My::Parse}!parseImage@{parseImage}}
+\index{parseImage@{parseImage}!My::Parse@{My::Parse}}
+\doxysubsubsection{\texorpdfstring{parseImage()}{parseImage()}}
+{\footnotesize\ttfamily void My\+::\+Parse\+::parse\+Image (\begin{DoxyParamCaption}\item[{int}]{dimension,  }\item[{Q\+List$<$ cv\+::\+Mat $>$ \&}]{list,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&}]{shapes,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_label3_d}{Label3D}} $\ast$ $>$ \&}]{labels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+3d图片及标注某个视角的解析 
+
+解析3d图片某视角的图片以及标注信息 \mbox{\Hypertarget{class_my_1_1_parse_afaacbbf6c7e8e575a24ac56d56602b3c}\label{class_my_1_1_parse_afaacbbf6c7e8e575a24ac56d56602b3c}} 
+\index{My::Parse@{My::Parse}!write@{write}}
+\index{write@{write}!My::Parse@{My::Parse}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void My\+::\+Parse\+::write (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape2_d}{My\+::\+Shape2D}} $\ast$ $>$ \&}]{shapes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+2d图片及标注信息的保存 
+
+2d图片以及标注信息的保存写入 \mbox{\Hypertarget{class_my_1_1_parse_a10a4303ab2804a75a4ab30a0241fb22d}\label{class_my_1_1_parse_a10a4303ab2804a75a4ab30a0241fb22d}} 
+\index{My::Parse@{My::Parse}!write3D@{write3D}}
+\index{write3D@{write3D}!My::Parse@{My::Parse}}
+\doxysubsubsection{\texorpdfstring{write3D()}{write3D()}}
+{\footnotesize\ttfamily void My\+::\+Parse\+::write3D (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{Q\+List$<$ \mbox{\hyperlink{class_my_1_1_shape3_d}{My\+::\+Shape3D}} $\ast$ $>$ \&}]{shapes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+3d图片及标注信息的保存 
+
+3d图片以及标注信息的保存写入 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{parse_8h}{parse.\+h}}\item 
+src/\mbox{\hyperlink{parse_8cpp}{parse.\+cpp}}\end{DoxyCompactItemize}

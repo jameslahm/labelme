@@ -1,0 +1,169 @@
+\hypertarget{class_my_1_1_command}{}\doxysection{My\+::Command Class Reference}
+\label{class_my_1_1_command}\index{My::Command@{My::Command}}
+
+
+命令栈基类，用来实现撤销和重做功能  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+Inheritance diagram for My\+::Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_a963f572d5f1afeb4fb592314a8a2bab5}{log\+Add}} (int index)
+\begin{DoxyCompactList}\small\item\em 记录添加标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_a4128ef23b6bb050a51dfa0a9522be8bf}{log\+Delete}} (int index, int id)
+\begin{DoxyCompactList}\small\item\em 记录删除标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_aa7925d85940b23daa4b4635006ec3034}{log\+Move}} (int index, float xoffset, float yoffset, int id=0)
+\begin{DoxyCompactList}\small\item\em 记录移动标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_ae60261502fea64d048257a7de45ae2f7}{log\+Change}} (int index, Q\+String s1, Q\+String s2)
+\begin{DoxyCompactList}\small\item\em 记录更改标注 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_a5015d21ddaeeba4e844483d116f7c21a}{undo}} ()
+\begin{DoxyCompactList}\small\item\em 撤销功能 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_1_1_command_a4dc178f7ce35fd687dd6cecad0cba588}{redo}} ()
+\begin{DoxyCompactList}\small\item\em 重做功能 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_1_1_command_a03da39f7a990106ad968a7a6c616a8e0}{$\sim$\+Command}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Stack$<$ Q\+String $>$ \mbox{\hyperlink{class_my_1_1_command_a8cf0a0e4b77962f96ac8a5d624a88134}{undo\+Commands}}
+\begin{DoxyCompactList}\small\item\em 存储undo（撤销）命令栈 \end{DoxyCompactList}\item 
+Q\+Stack$<$ Q\+String $>$ \mbox{\hyperlink{class_my_1_1_command_ae6350c68dcbc697b55789c0bd584e65a}{redo\+Commands}}
+\begin{DoxyCompactList}\small\item\em 存储redo（重做）命令栈 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+命令栈基类，用来实现撤销和重做功能 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_1_1_command_a03da39f7a990106ad968a7a6c616a8e0}\label{class_my_1_1_command_a03da39f7a990106ad968a7a6c616a8e0}} 
+\index{My::Command@{My::Command}!````~Command@{$\sim$Command}}
+\index{````~Command@{$\sim$Command}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command()}{~Command()}}
+{\footnotesize\ttfamily My\+::\+Command\+::$\sim$\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_1_1_command_a963f572d5f1afeb4fb592314a8a2bab5}\label{class_my_1_1_command_a963f572d5f1afeb4fb592314a8a2bab5}} 
+\index{My::Command@{My::Command}!logAdd@{logAdd}}
+\index{logAdd@{logAdd}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{logAdd()}{logAdd()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::log\+Add (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录添加标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_a359f7bdf964cbe791bc419235e225a47}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_a7ba306b9d82cfbd0192237e5d07f9e0b}{My\+::\+Command2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_command_ae60261502fea64d048257a7de45ae2f7}\label{class_my_1_1_command_ae60261502fea64d048257a7de45ae2f7}} 
+\index{My::Command@{My::Command}!logChange@{logChange}}
+\index{logChange@{logChange}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{logChange()}{logChange()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::log\+Change (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{Q\+String}]{s1,  }\item[{Q\+String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录更改标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_a2e87cdf4e59f89e5d97dc843a37f7aff}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_acbadcc226e42377ca522526e5374c36d}{My\+::\+Command2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_command_a4128ef23b6bb050a51dfa0a9522be8bf}\label{class_my_1_1_command_a4128ef23b6bb050a51dfa0a9522be8bf}} 
+\index{My::Command@{My::Command}!logDelete@{logDelete}}
+\index{logDelete@{logDelete}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{logDelete()}{logDelete()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::log\+Delete (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录删除标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_adf9eba4e1ad822cf5e89ba862ddbc8fd}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_a98cc605056a9748d1ba441aa72e5bf3d}{My\+::\+Command2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_command_aa7925d85940b23daa4b4635006ec3034}\label{class_my_1_1_command_aa7925d85940b23daa4b4635006ec3034}} 
+\index{My::Command@{My::Command}!logMove@{logMove}}
+\index{logMove@{logMove}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{logMove()}{logMove()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::log\+Move (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+记录移动标注 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_af40dcf7a634c669734d3e4a1bacea4c3}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_aa133d95b3be08a6bab796bdda7515dd4}{My\+::\+Command2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_command_a4dc178f7ce35fd687dd6cecad0cba588}\label{class_my_1_1_command_a4dc178f7ce35fd687dd6cecad0cba588}} 
+\index{My::Command@{My::Command}!redo@{redo}}
+\index{redo@{redo}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{redo()}{redo()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重做功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_a892bc79165749800697fa46e4bc74f8f}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_a6be24b6509f2e1b64babb9956bd79d58}{My\+::\+Command2D}}.
+
+\mbox{\Hypertarget{class_my_1_1_command_a5015d21ddaeeba4e844483d116f7c21a}\label{class_my_1_1_command_a5015d21ddaeeba4e844483d116f7c21a}} 
+\index{My::Command@{My::Command}!undo@{undo}}
+\index{undo@{undo}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily void My\+::\+Command\+::undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+撤销功能 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_1_1_command3_d_ad6d108813272eead25e8a7fdfa35d109}{My\+::\+Command3D}}, and \mbox{\hyperlink{class_my_1_1_command2_d_a8d237495afa22c5219ad22291fd33ef2}{My\+::\+Command2D}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_1_1_command_ae6350c68dcbc697b55789c0bd584e65a}\label{class_my_1_1_command_ae6350c68dcbc697b55789c0bd584e65a}} 
+\index{My::Command@{My::Command}!redoCommands@{redoCommands}}
+\index{redoCommands@{redoCommands}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{redoCommands}{redoCommands}}
+{\footnotesize\ttfamily Q\+Stack$<$Q\+String$>$ My\+::\+Command\+::redo\+Commands}
+
+
+
+存储redo（重做）命令栈 
+
+\mbox{\Hypertarget{class_my_1_1_command_a8cf0a0e4b77962f96ac8a5d624a88134}\label{class_my_1_1_command_a8cf0a0e4b77962f96ac8a5d624a88134}} 
+\index{My::Command@{My::Command}!undoCommands@{undoCommands}}
+\index{undoCommands@{undoCommands}!My::Command@{My::Command}}
+\doxysubsubsection{\texorpdfstring{undoCommands}{undoCommands}}
+{\footnotesize\ttfamily Q\+Stack$<$Q\+String$>$ My\+::\+Command\+::undo\+Commands}
+
+
+
+存储undo（撤销）命令栈 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_command_8h}{Command.\+h}}\item 
+src/\mbox{\hyperlink{command_8cpp}{command.\+cpp}}\end{DoxyCompactItemize}
