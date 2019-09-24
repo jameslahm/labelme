@@ -30,5 +30,5 @@ LabelMe.exe
 
 #### For Developers
 
-please visit [here](doc/html/index.html) 
+please visit [here]( https://jameslahm.github.io/labelme/index.html) 
 
