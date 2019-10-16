@@ -16,19 +16,6 @@ A image annotation software for 2D or 3D images, supporting pictures in various 
 
   
 
-#### For Users
-
-```
-git clone git@github.com:jameslahm/Labelme.git
-
-cd Labelme/bin
-
-LabelMe.exe
-```
-
-
-
-#### For Developers
-
+#### For Users and Developers
 please visit [here]( https://jameslahm.github.io/labelme) 
 
